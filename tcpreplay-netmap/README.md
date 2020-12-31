@@ -130,7 +130,7 @@ make
 make install
 ```
 
-### 5. Carregar os módulos para utilizar a ferramenta.
+### 5. Carregar os módulos para utilizar a ferramenta
 
 Por padrão o módulo do netmap e do driver modificado não é carregado na inicialização do sistema.
 
