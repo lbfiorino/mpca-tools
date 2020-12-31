@@ -118,6 +118,7 @@ make install
 Para habilitar o suporte ao netmap, deve-se utilizar o parâmetro `--with-netmap` informando o diretório da instalação do netmap feita no passo anterior.
 
 ```
+apt install build-essential libpcap-dev
 cd /root
 wget https://github.com/appneta/tcpreplay/releases/download/v4.3.3/tcpreplay-4.3.3.tar.xz
 tar xvf tcpreplay-4.3.3.tar.xz
