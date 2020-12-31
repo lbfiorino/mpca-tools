@@ -22,27 +22,27 @@ apt install libpcap-dev libpcap0.8 git
 
 ### 2. Linguagem Go
 
-```
+```bash
 cd /root
 wget https://golang.org/dl/go1.15.6.linux-amd64.tar.gz
 tar -C /usr/local -xzf go1.15.6.linux-amd64.tar.gz
 ```
 
 Adicionar `/usr/local/go/bin`no PATH:
-```
+```bash
 export PATH=$PATH:/usr/local/go/bin
 ```
 Nota:
 > Para adicionar de forma permanente, editar o arquivo `/etc/environment` e adicionar `/usr/local/go/bin` no PATH.
 
 Teste:
-```
+```bash
 go version
 ```
 
 ### 3. GopherCap
 
-```
+```bash
 cd /root
 git clone https://github.com/StamusNetworks/gophercap.git
 
