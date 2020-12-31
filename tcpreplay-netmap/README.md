@@ -36,7 +36,7 @@ Instalação da ferramenta Tcpreplay com o framework netmap para replicar arquiv
 
 :warning: Notas: 
 > - O FreeBSD já inclui o netmap e o tcpreplay no seu repositório, bastando apenas instalar via `pkg`.
->   ```
+>   ```bash
 >   pkg update
 >   pkg install netmap
 >   pgk intsall tcpreplay
@@ -57,14 +57,14 @@ Atualizar a lista de pacotes dos repostitórios como comando `apt update`
 
 ### 2. Instalar o Kernel Headers
 Por padrão o Ubuntu já instala o kernel headers. Mas caso seja necessário:
-```
+```bash
 apt install linux-headers-<kernel-version>
 ```
 
 ### 3. Instalar o Kernel Sources
 
 Verificar a versão do kernel instalada:
-```
+```bash
 uname -a
 
 #Resultado
@@ -72,14 +72,14 @@ uname -a
 ```
 
 Para listar os fontes disponíveis:
-```
+```bash
 apt search linux-source
 
 #Resultado
 linux-source-5.4.0/focal-updates,focal-updates,focal-security,focal-security 5.4.0-58.64 all
 ```
 Baixar o kernel source correspondente ao kernel no diretório `/lib/modules` (por padrão):
-```
+```bash
 cd /lib/modules
 apt source linux-source-5.4.0
 ```
@@ -96,7 +96,7 @@ Caso o driver de rede seja `e1000` ou `r8169.c`, pode-se utilizar o parâmetro `
 
 Para outras placas verificar a documentação do netmnap: [NIC Drivers](https://github.com/luigirizzo/netmap/blob/master/LINUX/README.md#nic-drivers)
 
-```
+```bash
 cd /root
 # Clone do repositório
 git clone https://github.com/luigirizzo/netmap.git
@@ -117,7 +117,7 @@ make install
 
 Para habilitar o suporte ao netmap, deve-se utilizar o parâmetro `--with-netmap` informando o diretório da instalação do netmap feita no passo anterior.
 
-```
+```bash
 apt install build-essential libpcap-dev
 cd /root
 wget https://github.com/appneta/tcpreplay/releases/download/v4.3.3/tcpreplay-4.3.3.tar.xz
@@ -136,7 +136,7 @@ Por padrão o módulo do netmap e do driver modificado não é carregado na inic
 
 Dessa forma, deve-se remover o módulo original fornecido pelo kernel e carrager os módulos manualmente.
 
-```
+```bash
 # Remove o módulo do driver original
 rmmod e1000
 
@@ -148,7 +148,7 @@ insmod /root/netmap/LINUX/e1000/e1000.ko
 ```
 
 Para verificar se os módulos foram carregados:
-```
+```bash
 lsmod
 
 #Resultado
@@ -158,7 +158,7 @@ netmap                204800  1 e1000
 ```
 
 Para retornar ao driver original:
-```
+```bash
 rmmod e1000
 rmmod netmap
 modprobe e1000
