@@ -40,7 +40,7 @@ Teste:
 go version
 ```
 
-### GopherCap
+### 3. GopherCap
 
 ```
 cd /root
