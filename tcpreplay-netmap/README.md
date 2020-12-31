@@ -75,7 +75,7 @@ Para listar os fontes disponíveis:
 ```bash
 apt search linux-source
 
-#Resultado
+# Resultado
 linux-source-5.4.0/focal-updates,focal-updates,focal-security,focal-security 5.4.0-58.64 all
 ```
 Baixar o kernel source correspondente ao kernel no diretório `/lib/modules` (por padrão):
@@ -151,7 +151,7 @@ Para verificar se os módulos foram carregados:
 ```bash
 lsmod
 
-#Resultado
+# Resultado
 Module                  Size  Used by
 e1000                 151552  0
 netmap                204800  1 e1000
