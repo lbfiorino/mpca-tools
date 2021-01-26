@@ -78,5 +78,9 @@ Em seguida, `no arquivo /etc/default/grub`, adicionar o parâmetro `intel_iommu=
 ```bash
 GRUB_CMDLINE_LINUX="default_hugepagesz=1G hugepagesz=1G hugepages=4 intel_iommu=on iommu=pt"
 ```
-
+Atualizar o GRUB e reiniciar.
+```bash
+update-grub
+reboot
+```
 
