@@ -9,6 +9,7 @@ Instalação da ferramenta Pktgen e do framework DPDK.
  - gcc 4.9+
  - cmake
  - pkg-config
+ - libpcap-dev
  - meson
  - ninja-build
  - libnuma-dev
@@ -49,4 +50,4 @@ export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
 git clone http://dpdk.org/git/apps/pktgen-dpdk
 
 cd pktgen-dpdk
-bash ./tools/pktgen-build.sh
+make
