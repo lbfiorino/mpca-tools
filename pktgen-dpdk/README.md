@@ -16,11 +16,13 @@ Instalação da ferramenta Pktgen e do framework DPDK.
  - python pyelftools
  - python sphinx
 
+Atualizar o SO.
 ```bash
 apt update
 apt full-upgrade
 reboot
 ```
+Instalar requisitos.
 ```bash
 apt install build-essential cmake pkg-config libpcap-dev meson ninja-build libnuma-dev
 apt install python3-pip
