@@ -29,8 +29,11 @@ python3 -m pip install pyelftools
 
 ## Huge pages config 
 [Documentação](https://doc.dpdk.org/guides/linux_gsg/sys_reqs.html#use-of-hugepages-in-the-linux-environment)
+
+No arquivo `/etc/default/grub`, configurar o parâmetro abaixo.
+
 ```
-echo 1024 > /sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages
+GRUB_CMDLINE_LINUX="default_hugepagesz=1G hugepagesz=1G hugepages=4"
 ```
 ## Install DPDK
 
