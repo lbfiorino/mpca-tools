@@ -10,6 +10,7 @@ Instalação da ferramenta Pktgen e do framework DPDK.
  - meson
  - ninja-build
  - libnuma-dev
+ - python pyelftools
 
 ```bash
 apt update
@@ -19,6 +20,8 @@ reboot
 ```bash
 apt install build-essential
 apt install meson ninja-build libnuma-dev
+apt install python3-pip
+python3 -m pip install pyelftools
 ```
 
 ## Install DPDK
