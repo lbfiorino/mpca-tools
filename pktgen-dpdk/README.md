@@ -68,10 +68,10 @@ make
 ```
 
 ## DPDK Bind NIC Drivers
-[Doc DPDK](http://dpdk-guide.gitlab.io/dpdk-guide/setup/binding.html)
+[Doc DPDK](http://dpdk-guide.gitlab.io/dpdk-guide/setup/binding.html)  
 [Doc IOMMU](http://dpdk-guide.gitlab.io/dpdk-guide/setup/iommu.html)
 
-Para habilitar o IOMMU (input-output memory management unit), deve-se habilitar o recurso VT-d or Virtualization Technology for Directed I/O do processador na BIOS.
+Para habilitar o IOMMU (input-output memory management unit), deve-se habilitar o recurso `VT-d/Virtualization Technology for Directed I/O` do processador na BIOS.
 Em seguida, `no arquivo /etc/default/grug`, adicionar o parâmetro `intel_iommu=on` (processador Intel) OU `amd_iommu=on` (processador AMD) no GRUB_CMDLINE_LINUX.
 
 
