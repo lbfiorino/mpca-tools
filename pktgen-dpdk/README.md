@@ -66,21 +66,3 @@ git clone http://dpdk.org/git/apps/pktgen-dpdk
 cd pktgen-dpdk
 make
 ```
-
-## DPDK Bind NIC Drivers
-[Doc DPDK](http://dpdk-guide.gitlab.io/dpdk-guide/setup/binding.html)  
-[Doc IOMMU](http://dpdk-guide.gitlab.io/dpdk-guide/setup/iommu.html)
-
-Para habilitar o IOMMU (input-output memory management unit), deve-se habilitar o recurso `VT-d/Virtualization Technology for Directed I/O` do processador na BIOS.
-Em seguida, `no arquivo /etc/default/grub`, adicionar o parâmetro `intel_iommu=on` (processador Intel) OU `amd_iommu=on` (processador AMD) no GRUB_CMDLINE_LINUX. Para melhorar o desempenho, é recomendado adicionar também o parâmetro `iommu=pt`.
-
-
-```bash
-GRUB_CMDLINE_LINUX="default_hugepagesz=1G hugepagesz=1G hugepages=4 intel_iommu=on iommu=pt"
-```
-Atualizar o GRUB e reiniciar.
-```bash
-update-grub
-reboot
-```
-
