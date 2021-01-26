@@ -7,6 +7,8 @@ Instalação da ferramenta Pktgen e do framework DPDK.
 ## Requisitos Ubuntu 20.04
  - Sistema operacional atualizado
  - gcc 4.9+
+ - cmake
+ - pkg-config
  - meson
  - ninja-build
  - libnuma-dev
@@ -18,7 +20,7 @@ apt full-upgrade
 reboot
 ```
 ```bash
-apt install build-essential
+apt install build-essential cmake pkg-config
 apt install meson ninja-build libnuma-dev
 apt install python3-pip
 python3 -m pip install pyelftools
@@ -36,4 +38,15 @@ sudo ninja -C build install
 sudo ldconfig  # make sure ld.so is pointing new DPDK libraries
 ```
 
+On Ubuntu 20.04
+```bash
+export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
+```
+
 ## Install Pktgen
+
+```bash
+git clone http://dpdk.org/git/apps/pktgen-dpdk
+
+cd pktgen-dpdk
+bash ./tools/pktgen-build.sh
