@@ -72,7 +72,7 @@ make
 [Doc IOMMU](http://dpdk-guide.gitlab.io/dpdk-guide/setup/iommu.html)
 
 Para habilitar o IOMMU (input-output memory management unit), deve-se habilitar o recurso `VT-d/Virtualization Technology for Directed I/O` do processador na BIOS.
-Em seguida, `no arquivo /etc/default/grug`, adicionar o parâmetro `intel_iommu=on` (processador Intel) OU `amd_iommu=on` (processador AMD) no GRUB_CMDLINE_LINUX.
+Em seguida, `no arquivo /etc/default/grub`, adicionar o parâmetro `intel_iommu=on` (processador Intel) OU `amd_iommu=on` (processador AMD) no GRUB_CMDLINE_LINUX.
 
 
 ```bash
