@@ -35,6 +35,13 @@ No arquivo `/etc/default/grub`, configurar o parâmetro abaixo.
 ```
 GRUB_CMDLINE_LINUX="default_hugepagesz=1G hugepagesz=1G hugepages=4"
 ```
+Atualizar o GRUB e reiniciar.
+```bash
+update-grub
+reboot
+```
+
+
 ## Install DPDK
 
 ```bash
