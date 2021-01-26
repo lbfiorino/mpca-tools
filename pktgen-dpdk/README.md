@@ -27,6 +27,11 @@ apt install python3-pip
 python3 -m pip install pyelftools
 ```
 
+## Huge pages config 
+[Documentação](https://doc.dpdk.org/guides/linux_gsg/sys_reqs.html#use-of-hugepages-in-the-linux-environment)
+```
+echo 1024 > /sys/kernel/mm/hugepages/hugepages-2048kB/nr_hugepages
+```
 ## Install DPDK
 
 ```bash
@@ -51,3 +56,4 @@ git clone http://dpdk.org/git/apps/pktgen-dpdk
 
 cd pktgen-dpdk
 make
+
