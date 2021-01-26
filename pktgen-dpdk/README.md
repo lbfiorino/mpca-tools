@@ -5,3 +5,10 @@ Instalação da ferramenta Pktgen e do framework DPDK.
 **Pktgen:** [Site](https://pktgen-dpdk.readthedocs.io/en/latest/index.html), [GitHub](https://github.com/pktgen/Pktgen-DPDK/)
 
 ## Requisitos
+ - meson
+ - ninja-build
+
+## Install DPDK
+
+
+## Install Pktgen
