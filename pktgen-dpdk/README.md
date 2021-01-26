@@ -21,8 +21,7 @@ apt full-upgrade
 reboot
 ```
 ```bash
-apt install build-essential cmake pkg-config
-apt install meson ninja-build libnuma-dev
+apt install build-essential cmake pkg-config libpcap-dev meson ninja-build libnuma-dev
 apt install python3-pip
 python3 -m pip install pyelftools
 ```
