@@ -14,6 +14,7 @@ Instalação da ferramenta Pktgen e do framework DPDK.
  - ninja-build
  - libnuma-dev
  - python pyelftools
+ - python sphinx
 
 ```bash
 apt update
@@ -23,7 +24,7 @@ reboot
 ```bash
 apt install build-essential cmake pkg-config libpcap-dev meson ninja-build libnuma-dev
 apt install python3-pip
-python3 -m pip install pyelftools
+python3 -m pip install pyelftools sphinx
 ```
 
 ## Huge pages config 
