@@ -5,17 +5,21 @@ Instalação da ferramenta Pktgen e do framework DPDK.
 **Pktgen:** [Site](https://pktgen-dpdk.readthedocs.io/en/latest/index.html), [GitHub](https://github.com/pktgen/Pktgen-DPDK/)
 
 ## Requisitos Ubuntu 20.04
+ - Sistema operacional atualizado
  - gcc 4.9+
  - meson
  - ninja-build
  - libnuma-dev
 
 ```bash
+apt update
+apt full-upgrade
+reboot
+```
+```bash
 apt install build-essential
 apt install meson ninja-build libnuma-dev
 ```
-
-
 
 ## Install DPDK
 
