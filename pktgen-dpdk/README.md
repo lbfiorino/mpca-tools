@@ -4,6 +4,12 @@ Instalação da ferramenta Pktgen e do framework DPDK.
 **DPDK:** [Site](http://core.dpdk.org/doc/), [Git](http://git.dpdk.org/)  
 **Pktgen:** [Site](https://pktgen-dpdk.readthedocs.io/en/latest/index.html), [GitHub](https://github.com/pktgen/Pktgen-DPDK/)
 
+**Linux Drivers:**  
+https://doc.dpdk.org/guides/linux_gsg/linux_drivers.html  
+https://dpdk-guide.gitlab.io/dpdk-guide/setup/binding.html
+
+**IOMMU:** https://dpdk-guide.gitlab.io/dpdk-guide/setup/iommu.html
+
 ## Requisitos Ubuntu 20.04
  - Sistema operacional atualizado
  - gcc 4.9+
