@@ -90,3 +90,20 @@ export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
 export RTE_SDK=/root/dpdk
 export RTE_TARGET=x86_64-native-linux-gcc
 ```
+
+## DPDK Dev Bind
+
+Em máquinas virtuais utilizar o driver `vfio-pci` sem IOMMU.
+```bash
+modprobe vfio enable_unsafe_noiommu_mode=1
+echo 1 > /sys/module/vfio/parameters/enable_unsafe_noiommu_mode
+```
+Bind Nic:
+```bash
+#Listar as portas 
+dpdk-devbind.py --status
+
+# Bind Port
+# Porta diferente da LAN para não perder conexão
+dpdk-devbind.py -b vfio-pci 0000:00:07.0
+```
