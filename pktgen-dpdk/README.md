@@ -75,3 +75,18 @@ git clone http://dpdk.org/git/apps/pktgen-dpdk
 cd pktgen-dpdk
 make
 ```
+
+## Setup Pktgen-DPDK
+
+```bash
+export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
+export RTE_SDK=/root/dpdk
+export RTE_TARGET=x86_64-native-linux-gcc
+```
+
+Adicionar no arquivo `~/.bashrc` para persistir.
+```bash
+export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
+export RTE_SDK=/root/dpdk
+export RTE_TARGET=x86_64-native-linux-gcc
+```
