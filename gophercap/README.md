@@ -14,7 +14,7 @@ A instalação foi realizada com o usuário `root`.
 
 ## Instalação no Ubuntu 20.04
 
-### 1. Libpcap
+### 1. Libpcap, Git
 ```
 apt update
 apt install libpcap-dev libpcap0.8 git
