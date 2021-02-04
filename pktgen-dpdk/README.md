@@ -80,6 +80,11 @@ make
 ```
 
 ## Setup Pktgen-DPDK
+```diff
+- EM CONSTRUÇÃO:
+-   Gerar RTE_TARGET
+-   Setup das portas
+```
 
 ```bash
 export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
