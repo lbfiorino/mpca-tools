@@ -1,7 +1,4 @@
-# Pktgen (Packet Gen-erator) --
-```diff
-- EM CONSTRUÇÃO
-```
+# Pktgen (Packet Gen-erator)
 
 Instalação da ferramenta Pktgen e do framework DPDK.
 
