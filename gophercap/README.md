@@ -60,7 +60,7 @@ export PATH=$PATH:/root/go/bin/
 ```
 
 ### Replay PCAP
-Fazer o MAP do arquivo pcap.
+Mapear os metadados do arquivo pcap.
 ```bash
 gopherCap map --dir-src /mnt/pcap --file-suffix "pcap" --dump-json /mnt/pcap/meta.json
 ```
