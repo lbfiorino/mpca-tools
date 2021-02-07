@@ -93,4 +93,6 @@ Aumentando o MTU para Jumbo Frames.
 ```bash
 ip link set dev veth0 mtu 9000
 ip link set dev veth1 mtu 9000
+# OU
+# ifconfig <interface> mtu 9000
 ```
