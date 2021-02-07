@@ -62,17 +62,12 @@ export PATH=$PATH:/root/go/bin/
 ### Replay PCAP
 Fazer o MAP do arquivo pcap.
 ```bash
-gopherCap map \
-	--dir-src /mnt/pcap \
-	--file-suffix "pcap" \
-	--dump-json /mnt/pcap/meta.json
+gopherCap map --dir-src /mnt/pcap --file-suffix "pcap" --dump-json /mnt/pcap/meta.json
 ```
 
 Replay do pcap.
 ```bash
-gopherCap replay \
-	--out-interface veth0 \
-	--dump-json /mnt/pcap/meta.json
+gopherCap replay --out-interface veth0 --dump-json /mnt/pcap/meta.json
 ```
 
 A interface `veth0` utilizada acima é uma interface virtual criada da seguinte forma.
