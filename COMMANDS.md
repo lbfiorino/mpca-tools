@@ -1,6 +1,6 @@
 ## Comandos
 
-### Cria par de interfaces virtuais (se enviar por veth0, veth1 recebe)
+### Cria par de interfaces virtuais para testes (se enviar por veth0, veth1 recebe)
 ```bash
 ip link add veth0 type veth peer name veth1
 ```
