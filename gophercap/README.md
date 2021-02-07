@@ -83,3 +83,14 @@ ip link set veth0 up
 ip link set veth1 up
 ```
 
+### Ajuste de MTU
+
+Caso receba o erro `Message too long`. É necessário aumentar o MTU.
+```bash
+FATA[0005] send: Message too long
+```
+Aumentando o MTU para Jumbo Frames.
+```bash
+ip link set dev veth0 mtu 9000
+ip link set dev veth1 mtu 9000
+```
