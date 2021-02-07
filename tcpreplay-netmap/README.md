@@ -171,6 +171,7 @@ Warning: Unable to send packet: Error with PF_PACKET send() [128338]: Message to
 ```
 Aumentando o MTU para Jumbo Frames.
 ```bash
-ip link set dev veth0 mtu 9000
-ip link set dev veth1 mtu 9000
+ip link set dev <interface> mtu 9000
+# OR
+ifconfig <interface> mtu 9000
 ```
