@@ -162,3 +162,15 @@ rmmod e1000
 rmmod netmap
 modprobe e1000
 ```
+
+### Ajuste de MTU
+
+Caso receba o erro `Message too long (errno = 90)`. É necessário aumentar o MTU.
+```bash
+Warning: Unable to send packet: Error with PF_PACKET send() [128338]: Message too long (errno = 90)
+```
+Aumentando o MTU para Jumbo Frames.
+```bash
+ip link set dev veth0 mtu 9000
+ip link set dev veth1 mtu 9000
+```
