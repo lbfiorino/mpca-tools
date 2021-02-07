@@ -58,3 +58,39 @@ go build -o ./gopherCap ./
 go install
 export PATH=$PATH:/root/go/bin/
 ```
+
+### Replay PCAP
+Fazer o MAP do arquivo pcap.
+```bash
+gopherCap map \
+	--dir-src /mnt/pcap \
+	--file-suffix "pcap" \
+	--dump-json /mnt/pcap/meta.json
+```
+
+Replay do pcap.
+```bash
+gopherCap replay \
+	--out-interface veth0 \
+	--dump-json /mnt/pcap/meta.json
+```
+
+A interface `veth0` utilizada acima é uma interface virtual criada da seguinte forma.
+O pacotes enviados pela interface `veth0` são recebidos pela interface `veth1`.
+```bash
+ip link add veth0 type veth peer name veth1
+ip link set veth0 up
+ip link set veth1 up
+```
+
+### Ajuste de MTU
+
+Caso receba o erro `Message too long`. É necessário aumentar o MTU.
+```bash
+FATA[0005] send: Message too long
+```
+Aumentando o MTU para Jumbo Frames.
+```bash
+ip link set dev veth0 mtu 9000
+ip link set dev veth1 mtu 9000
+```
