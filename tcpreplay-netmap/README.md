@@ -126,9 +126,7 @@ cd tcpreplay-4.3.3
 # Passar o parâmetro --with-netmap com o diretório dos fontes do netmap
 ./configure --with-netmap=/root/netmap
 make
-# Instala os drivers netmap.ko e da placa de rede para carregar no boot.
-# Para carregar manualmente, não executar o 'make install'
-# make install 
+make install 
 ```
 
 ### 5. Carregar os módulos para utilizar a ferramenta
