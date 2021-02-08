@@ -38,7 +38,7 @@ Instalação da ferramenta Tcpreplay com o framework netmap para replicar arquiv
 > - O FreeBSD já inclui o netmap e o tcpreplay no seu repositório, bastando apenas instalar via `pkg`.
 >   ```bash
 >   pkg update
->   pgk intsall tcpreplay
+>   pgk install tcpreplay
 >   ```
 > - O Ubuntu tem o pacote tcpreplay no repositório, mas sem suporte ao netmap.
 
