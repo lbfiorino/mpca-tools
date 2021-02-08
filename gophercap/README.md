@@ -12,6 +12,9 @@ A instalação foi realizada com o usuário `root`.
 - Git
     - Debian-based: `apt install git` 
 
+- gcc 
+    - Debian-based: `apt install build-essential` 
+
 ## Instalação no Ubuntu 20.04
 
 ### 1. Libpcap, Git
