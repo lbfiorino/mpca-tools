@@ -21,7 +21,7 @@ apt install libpcap-dev libpcap0.8 git
 ```
 
 ### 2. Linguagem Go
-
+[GoLang Download Page](https://golang.org/dl/)
 ```bash
 cd /root
 wget https://golang.org/dl/go1.15.6.linux-amd64.tar.gz
