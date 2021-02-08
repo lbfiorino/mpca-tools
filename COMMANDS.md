@@ -21,6 +21,7 @@ tshark -T fields -e frame.len -r <PCAP_FILE> | awk 'BEGIN{min=1500; max=0}{if ($
 ```
 
 ### Tcpreplay preservando o timestamp e com cache em memória do PCAP
+Para melhor desempenho colocar o arquivo PCAP em um diretório TMPFS.
 ```bash
 tcpreplay --intf1=veth0 --multiplier=1.000000 --preload-pcap <PCAP_FILE>
 ```
