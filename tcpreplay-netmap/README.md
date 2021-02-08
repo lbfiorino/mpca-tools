@@ -109,7 +109,7 @@ cd /root/netmap/LINUX
 make 
 make install
 ```
-Ajustar o tamanho do Buffer do netmap de acordo com o MTU.
+:warning: Ajustar o tamanho do Buffer do netmap de acordo com o MTU.
 No caso abaixo, o buffer foi ajustado para Jumbo Frames.
 ```bash
 echo 9000 > /sys/module/netmap/parameters/buf_size
