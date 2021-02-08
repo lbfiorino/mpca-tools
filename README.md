@@ -1,6 +1,6 @@
 ## Documentação da instalação das seguintes ferramentas:
 
-Arquivo `COMMANDS.md` contém comandos utilizados para utilização das ferramentas.
+O arquivo `COMMANDS.md` contém comandos utilizados para utilização das ferramentas.
 
 - GopherCap  
 https://www.stamus-networks.com/blog/gophercap  
