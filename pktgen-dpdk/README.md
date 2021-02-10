@@ -15,6 +15,7 @@ https://dpdk-guide.gitlab.io/dpdk-guide/setup/binding.html
 
 ## Requisitos Ubuntu 20.04
  - Sistema operacional atualizado
+ - Linux Headers
  - gcc 4.9+
  - cmake
  - pkg-config
@@ -33,7 +34,7 @@ reboot
 ```
 Instalar requisitos.
 ```bash
-apt install build-essential cmake pkg-config libpcap-dev meson ninja-build libnuma-dev
+apt install build-essential cmake pkg-config libpcap-dev meson ninja-build libnuma-dev linux-headers-`uname -r`
 apt install python3-pip
 python3 -m pip install pyelftools sphinx
 ```
