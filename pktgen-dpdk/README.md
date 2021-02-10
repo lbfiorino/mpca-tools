@@ -61,9 +61,10 @@ git clone https://dpdk.org/git/dpdk
 sudo rm -fr /usr/local/lib/x86_64-linux-gnu # DPDK changed a number of lib names and need to clean up
 cd dpdk
 meson build
-ninja -C build
-sudo ninja -C build install
-sudo ldconfig  # make sure ld.so is pointing new DPDK libraries
+cd build
+ninja
+ninja install
+ldconfig  # make sure ld.so is pointing new DPDK libraries
 ```
 
 On Ubuntu 20.04
