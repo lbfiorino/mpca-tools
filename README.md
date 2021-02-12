@@ -13,3 +13,12 @@ http://core.dpdk.org/
 - Tcpreplay + netmap  
 https://tcpreplay.appneta.com/  
 http://info.iet.unipi.it/~luigi/netmap/
+
+
+### Arquivo `requirements.txt` 
+Arquivo contendo os pacotes python.
+
+```bash
+# Install and Upgrade all packages to the newest available version. 
+python3 -m pip install -r requirements.txt --upgrade
+```
