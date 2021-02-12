@@ -1,0 +1,28 @@
+six
+requests
+Cython
+
+# Machine Learning
+jupyter
+matplotlib
+numpy
+pandas
+scipy
+sklearn
+scikit-learn
+scikit-image
+#tensorflow
+#keras
+
+# Computer Networks
+networkx
+scapy
+
+# OpenStack Clients
+PyQt5
+python-openstackclient
+gnocchiclient
+
+# DKDP-Pktgen
+pyelftools
+sphinx
