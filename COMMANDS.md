@@ -16,8 +16,9 @@ tshark -T fields frame.number -e frame.len -r <PCAP_FILE>
 ```
 
 ###  Get Average packet rate from PCAP file
+```bash
 capinfos -x $1 | grep 'Average packet rate' | awk '{print $4}' | tr -d ',.'
-
+```
 
 ### Exibe o tamanho do menor e do maior pacote dentro do PCAP (para definir o MTU)
 ```bash
