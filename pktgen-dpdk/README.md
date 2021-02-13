@@ -94,6 +94,12 @@ export RTE_SDK=/root/dpdk-stable-19.11.6
 export RTE_TARGET=x86_64-native-linux-gcc
 ```
 
+Para persistir as variáveis, adicionar as linhas abaixo no arquivo `/etc/environment`:
+```bash
+RTE_SDK=/root/dpdk-stable-19.11.6
+RTE_TARGET=x86_64-native-linux-gcc
+```
+
 Build Pktgen:
 ```bash
 git clone http://dpdk.org/git/apps/pktgen-dpdk
