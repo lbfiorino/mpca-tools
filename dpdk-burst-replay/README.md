@@ -14,8 +14,8 @@ A instalação foi realizada com o usuário `root`.
 - dpdk-dev
 - libnuma-dev (Debian-based)
 
-## Principais [Limitações](https://github.com/FraudBuster/dpdk-burst-replay#todo)
-TODO na documentação:  
+## Principais [Limitações](https://github.com/FraudBuster/dpdk-burst-replay#todo)  
+`TODO` na documentação:  
 - Option to configure maximum bitrate.
 - Option to send the pcap with the good pcap timers.
 
