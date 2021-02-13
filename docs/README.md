@@ -1,5 +1,5 @@
 # Guias e documentações
 ## DPDK Guide for Linux
-- [**18.11**](https://fast.dpdk.org/doc/pdf-guides-18.11/linux_gsg-18.11.pdf)  
-- [**19.11**](https://fast.dpdk.org/doc/pdf-guides-19.11/linux_gsg-19.11.pdf)  
-- [**20.11**]()  
+- [**18.11**](https://doc.dpdk.org/guides-18.11/linux_gsg/index.html)  
+- [**19.11**](https://doc.dpdk.org/guides-19.11/linux_gsg/index.html)  
+- [**20.11**](https://doc.dpdk.org/guides-20.11/linux_gsg/index.html)  
