@@ -9,7 +9,7 @@ Instalação da ferramenta pdk-burst-replay e do framework DPDK.
 
 A instalação foi realizada com o usuário `root`.
 
-## Requisitos na Documentação
+## Requisitos na Documentação dpdk-burst-replay
 - Tested with DPDK versions: 16.11.9/17.11.5/18.11.1
 - dpdk-dev
 - libnuma-dev (Debian-based)
@@ -45,3 +45,37 @@ reboot
 **DPDK Version:** 18.11.11  
 [Installing custom DPDK version](https://doc.dpdk.org/burst-replay/user-guide.html#installing-custom-dpdk-version)  
 
+Atualizar o SO.
+```bash
+apt update
+apt full-upgrade
+reboot
+```
+Instalar requisitos.
+```bash
+apt install build-essential cmake pkg-config libpcap-dev meson ninja-build libnuma-dev linux-headers-`uname -r`
+apt install python3-pip
+python3 -m pip install pyelftools sphinx
+```
+
+Instalar DPDK.
+```bash
+git clone https://dpdk.org/git/dpdk
+sudo rm -fr /usr/local/lib/x86_64-linux-gnu # DPDK changed a number of lib names and need to clean up
+cd dpdk
+meson build
+cd build
+ninja
+ninja install
+ldconfig  # make sure ld.so is pointing new DPDK libraries
+```
+On Ubuntu 20.04
+```bash
+export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
+```
+
+#### Build DPDK
+ ```bash
+ #make config T=x86_64-native-linuxapp-gcc
+ make install T=x86_64-native-linuxapp-gcc -j
+ ```
