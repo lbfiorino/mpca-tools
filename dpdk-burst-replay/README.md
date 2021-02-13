@@ -2,6 +2,7 @@
 ```diff
 - EM CONSTRUÇÃO
 ```
+Instalação da ferramenta pdk-burst-replay e do framework DPDK.
 
 **pdk-burst-replay:** [GitHub](https://github.com/FraudBuster/dpdk-burst-replay), [Documentation](https://doc.dpdk.org/burst-replay/index.html)  
 **DPDK:** [Site](http://core.dpdk.org/doc/), [Git](http://git.dpdk.org/) 
