@@ -112,7 +112,7 @@ make -j
 
 Em máquinas virtuais utilizar o driver `vfio-pci` sem IOMMU.
 ```bash
-modprobe vfio enable_unsafe_noiommu_mode=1
+modprobe vfio
 echo 1 > /sys/module/vfio/parameters/enable_unsafe_noiommu_mode
 ```
 
