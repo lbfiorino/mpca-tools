@@ -64,12 +64,9 @@ wget http://fast.dpdk.org/rel/dpdk-18.11.11.tar.xz
 tar xvf http://fast.dpdk.org/rel/dpdk-18.11.11.tar.xz 
 
 rm -fr /usr/local/lib/x86_64-linux-gnu # DPDK changed a number of lib names and need to clean up
-cd dpdk-stable-18.11.11/
-meson build
-cd build
-ninja
-ninja install
-ldconfig  # make sure ld.so is pointing new DPDK libraries
+cd dpdk-stable-18.11.11
+make install T=x86_64-native-linuxapp-gcc
+
 ```
 On Ubuntu 20.04
 ```bash
