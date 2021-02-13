@@ -60,6 +60,7 @@ python3 -m pip install pyelftools sphinx
 
 Instalar DPDK.
 ```bash
+cd /root
 wget http://fast.dpdk.org/rel/dpdk-18.11.11.tar.xz
 tar xvf http://fast.dpdk.org/rel/dpdk-18.11.11.tar.xz
 
@@ -75,3 +76,12 @@ cd /bin
 ln -s python3.8 python
 ```
 
+### Install dpdk-burst-replay
+
+```
+wget https://git.dpdk.org/apps/dpdk-burst-replay/snapshot/dpdk-burst-replay-1.1.1.tar.xz
+tar xvf dpdk-burst-replay-1.1.1.tar.xz
+
+cd dpdk-burst-replay-1.1.1
+RTE_SDK=/root/dpdk-stable-18.11.11/ make -f DPDK_Makefile && sudo cp build/dpdk-replay /usr/bin
+``
