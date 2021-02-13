@@ -84,4 +84,21 @@ tar xvf dpdk-burst-replay-1.1.1.tar.xz
 
 cd dpdk-burst-replay-1.1.1
 RTE_SDK=/root/dpdk-stable-18.11.11/ make -f DPDK_Makefile && sudo cp build/dpdk-replay /usr/bin
-``
+```
+
+## DPDK Dev Bind
+
+Em máquinas virtuais utilizar o driver `vfio-pci` sem IOMMU.
+```bash
+modprobe vfio enable_unsafe_noiommu_mode=1
+echo 1 > /sys/module/vfio/parameters/enable_unsafe_noiommu_mode
+```
+Bind Nic:
+```bash
+#Listar as portas 
+dpdk-devbind.py --status
+
+# Bind Port
+# Porta diferente da LAN para não perder conexão
+dpdk-devbind.py -b vfio-pci 0000:00:07.0
+```
