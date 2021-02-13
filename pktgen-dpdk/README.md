@@ -73,20 +73,20 @@ ninja install
 ldconfig  # make sure ld.so is pointing new DPDK libraries
 ```
 
-Criar RTE_TARGET.
+Criar RTE_TARGET:
 ```bash
 cd /root/dpdk-stable-19.11.6
 make install T=x86_64-native-linux-gcc
 ```
 
-No Ubuntu 20.04, exportart `PKG_CONFIG_PATH`.
+No Ubuntu 20.04, exportart `PKG_CONFIG_PATH`:
 ```bash
 export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
 ```
 
 ## Install Pktgen
 
-Exportar variáveis RTE_SDK e RTE_TARGET.
+Exportar variáveis RTE_SDK e RTE_TARGET:
 ```bash
 # RTE_SDK=<DPDKinstallDir>
 # RTE_TARGET=x86_64-native-linux-gcc
@@ -94,31 +94,12 @@ export RTE_SDK=/root/dpdk-stable-19.11.6
 export RTE_TARGET=x86_64-native-linux-gcc
 ```
 
+Build Pktgen:
 ```bash
 git clone http://dpdk.org/git/apps/pktgen-dpdk
 
 cd pktgen-dpdk
 make
-```
-
-## Setup Pktgen-DPDK
-```diff
-- EM CONSTRUÇÃO:
--   Gerar RTE_TARGET
--   Setup das portas
-```
-
-```bash
-export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
-export RTE_SDK=/root/dpdk
-export RTE_TARGET=x86_64-native-linux-gcc
-```
-
-Adicionar no arquivo `~/.bashrc` para persistir.
-```bash
-export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
-export RTE_SDK=/root/dpdk
-export RTE_TARGET=x86_64-native-linux-gcc
 ```
 
 ## DPDK Dev Bind
@@ -128,9 +109,10 @@ Em máquinas virtuais utilizar o driver `vfio-pci` sem IOMMU.
 modprobe vfio enable_unsafe_noiommu_mode=1
 echo 1 > /sys/module/vfio/parameters/enable_unsafe_noiommu_mode
 ```
+
 Bind Nic:
 ```bash
-#Listar as portas 
+# Listar as portas 
 dpdk-devbind.py --status
 
 # Bind Port
