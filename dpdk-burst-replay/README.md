@@ -42,7 +42,7 @@ reboot
 ```
 
 ### Install DPDK
-**DPDK Version:** 18.11.11  
+**DPDK Version:** 18.11.11 [Guide for Linux](https://fast.dpdk.org/doc/pdf-guides-18.11/linux_gsg-18.11.pdf)
 [Installing custom DPDK version](https://doc.dpdk.org/burst-replay/user-guide.html#installing-custom-dpdk-version)  
 
 Atualizar o SO.
