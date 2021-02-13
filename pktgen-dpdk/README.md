@@ -56,7 +56,7 @@ reboot
 [DPDK Download](http://core.dpdk.org/download/)  
 
 :warning: Nota:
-> Versão 20.11 não gerou o RTE_TARGET: `make install T=x86_64-native-linux-gcc`
+> Versão 20.11 não gerou o RTE_TARGET: `make install T=x86_64-native-linux-gcc -j`
 
 ```bash
 cd /root/
@@ -76,7 +76,7 @@ ldconfig  # make sure ld.so is pointing new DPDK libraries
 Criar RTE_TARGET:
 ```bash
 cd /root/dpdk-stable-19.11.6
-make install T=x86_64-native-linux-gcc
+make install T=x86_64-native-linux-gcc -j
 ```
 
 No Ubuntu 20.04, exportart `PKG_CONFIG_PATH`:
@@ -99,7 +99,7 @@ Build Pktgen:
 git clone http://dpdk.org/git/apps/pktgen-dpdk
 
 cd pktgen-dpdk
-make
+make -j
 ```
 
 ## DPDK Dev Bind
