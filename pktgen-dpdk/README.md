@@ -139,3 +139,25 @@ dpdk-devbind.py --status
 # Porta diferente da LAN para não perder conexão
 dpdk-devbind.py -b vfio-pci 0000:00:07.0
 ```
+
+## Send PCAP
+```bash
+# PARAMS
+# -l 0-1 : corelis - two lcores: core 0 monitoring, core 1 send packets
+# -n 1 : One memory channel
+# -T : color output
+# -P : promiscuous mode
+# -s 0:<pcapfile> : PCAP packet stream file, 'P' is the port number
+pktgen-dpdk -l 0-1 -n 1 -- -m 1.0 -T -P -s 0:/root/pcaps/smallFlows.pcap
+```
+No console do Pktgen:
+```bash
+# Mostra informações do PCAP
+pcap show
+
+# Define o número de pacotes a enviar, neste caso o número de pacotes do arquivo PCAP.
+set 0 count <pcap_total_packets>
+
+# Start send packets
+start 0
+```
