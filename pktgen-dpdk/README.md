@@ -54,7 +54,8 @@ reboot
 ```
 
 ## Install DPDK
-**Versão:** 19.11  
+**Versão:** 19.11 (Última versão no momento: 19.11.6)  
+[DPDK Download](http://core.dpdk.org/download/)
 :warning: Nota:
 > Versão 20.11 não gerou o RTE_TARGET: `make install T=x86_64-native-linux-gcc`
 
