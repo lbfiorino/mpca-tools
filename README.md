@@ -12,6 +12,9 @@ http://core.dpdk.org/
 https://tcpreplay.appneta.com/  
 http://info.iet.unipi.it/~luigi/netmap/
 
+- dpdk-burst-replay  
+https://github.com/FraudBuster/dpdk-burst-replay  
+http://core.dpdk.org/  
 
 #### Arquivo `COMMANDS.md`
 Arquivo contendo comandos para utilização das ferramentas.
