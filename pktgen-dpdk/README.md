@@ -58,15 +58,25 @@ reboot
 **Versão:** 19.11  
 :warning: Nota:
 > Versão 20.11 não gerou o RTE_TARGET: make install T=x86_64-native-linux-gcc -j
+
 ```bash
+cd /root/
 wget http://fast.dpdk.org/rel/dpdk-19.11.6.tar.xz
-sudo rm -fr /usr/local/lib/x86_64-linux-gnu # DPDK changed a number of lib names and need to clean up
-cd dpdk
+tar xvf dpdk-19.11.6.tar.xz
+
+rm -fr /usr/local/lib/x86_64-linux-gnu # DPDK changed a number of lib names and need to clean up
+
+cd dpdk-stable-19.11.6
 meson build
 cd build
 ninja
 ninja install
 ldconfig  # make sure ld.so is pointing new DPDK libraries
+```
+Criar RTE_TARGET>
+```bash
+cd /root/dpdk-stable-19.11.6
+make install T=x86_64-native-linux-gcc
 ```
 
 On Ubuntu 20.04
