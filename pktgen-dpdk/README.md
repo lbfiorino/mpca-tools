@@ -86,6 +86,14 @@ export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
 
 ## Install Pktgen
 
+Exportar variáveis RTE_SDK e RTE_TARGET.
+```bash
+# RTE_SDK=<DPDKinstallDir>
+# RTE_TARGET=x86_64-native-linux-gcc
+export RTE_SDK=/root/dpdk-stable-19.11.6
+export RTE_TARGET=x86_64-native-linux-gcc
+```
+
 ```bash
 git clone http://dpdk.org/git/apps/pktgen-dpdk
 
