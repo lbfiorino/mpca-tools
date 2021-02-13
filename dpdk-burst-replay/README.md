@@ -51,7 +51,7 @@ reboot
 [Installing custom DPDK version](https://doc.dpdk.org/burst-replay/user-guide.html#installing-custom-dpdk-version)  
 
 :warning: Nota:
-- Versão 18.11.1 não compilou. Erro na compilação do driber igb.
+> Versão 18.11.1 não compilou. Erro na compilação do driber igb.
 
 Atualizar o SO.
 ```bash
