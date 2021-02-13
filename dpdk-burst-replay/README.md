@@ -64,7 +64,7 @@ wget http://fast.dpdk.org/rel/dpdk-18.11.11.tar.xz
 tar xvf http://fast.dpdk.org/rel/dpdk-18.11.11.tar.xz 
 
 rm -fr /usr/local/lib/x86_64-linux-gnu # DPDK changed a number of lib names and need to clean up
-cd dpdk
+cd dpdk-stable-18.11.11/
 meson build
 cd build
 ninja
