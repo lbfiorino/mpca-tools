@@ -53,7 +53,6 @@ update-grub
 reboot
 ```
 
-
 ## Install DPDK
 **Versão:** 19.11  
 :warning: Nota:
@@ -73,7 +72,8 @@ ninja
 ninja install
 ldconfig  # make sure ld.so is pointing new DPDK libraries
 ```
-Criar RTE_TARGET>
+
+Criar RTE_TARGET
 ```bash
 cd /root/dpdk-stable-19.11.6
 make install T=x86_64-native-linux-gcc
