@@ -6,7 +6,10 @@ dpdk-replay pcaps/smallFlows.pcap 00:04.0
 
 Erro:
 DPDK: RTE ETH Ethernet device configuration failed
+
+- Testar em versões anteriores do Ubuntu (18.04, 16.04)
 ```
+
 Instalação da ferramenta pdk-burst-replay e do framework DPDK.
 
 **pdk-burst-replay:** [GitHub](https://github.com/FraudBuster/dpdk-burst-replay), [Documentação](https://doc.dpdk.org/burst-replay/index.html)  
