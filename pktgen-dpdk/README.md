@@ -55,7 +55,7 @@ reboot
 
 
 ## Install DPDK
-
+**Versão:** 19.11  
 ```bash
 git clone https://dpdk.org/git/dpdk
 sudo rm -fr /usr/local/lib/x86_64-linux-gnu # DPDK changed a number of lib names and need to clean up
