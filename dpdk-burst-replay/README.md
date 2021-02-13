@@ -1,7 +1,10 @@
 # DPDK burst replay tool
 ```diff
 - Erro ao tentar rodar a aplicação:
+
 dpdk-replay pcaps/smallFlows.pcap 00:04.0
+
+Erro:
 DPDK: RTE ETH Ethernet device configuration failed
 ```
 Instalação da ferramenta pdk-burst-replay e do framework DPDK.
