@@ -56,8 +56,10 @@ reboot
 
 ## Install DPDK
 **Versão:** 19.11  
+:warning: Nota:
+> Versão 20.11 não gerou o RTE_TARGET: make install T=x86_64-native-linux-gcc -j
 ```bash
-git clone https://dpdk.org/git/dpdk
+wget http://fast.dpdk.org/rel/dpdk-19.11.6.tar.xz
 sudo rm -fr /usr/local/lib/x86_64-linux-gnu # DPDK changed a number of lib names and need to clean up
 cd dpdk
 meson build
