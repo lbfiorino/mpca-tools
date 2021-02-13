@@ -58,7 +58,7 @@ apt install python3-pip
 python3 -m pip install pyelftools sphinx
 ```
 
-Instalar DPDK
+Instalar DPDK.
 ```bash
 wget http://fast.dpdk.org/rel/dpdk-18.11.11.tar.xz
 tar xvf http://fast.dpdk.org/rel/dpdk-18.11.11.tar.xz
@@ -69,7 +69,7 @@ cd x86_64-native-linuxapp-gcc
 make install
  ```
 
-Criar link simbólico `python` para ´python3.8`
+Criar link simbólico `python` para `python3.8`.
 ```bash
 cd /bin
 ln -s python3.8 python
