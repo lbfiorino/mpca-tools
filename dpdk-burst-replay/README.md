@@ -75,6 +75,14 @@ export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
 
 #### Build DPDK
  ```bash
- #make config T=x86_64-native-linuxapp-gcc
- make install T=x86_64-native-linuxapp-gcc -j
+make install T=x86_64-native-linuxapp-gcc
+cd x86_64-native-linuxapp-gcc
+make install
  ```
+Criar link simbólico `python` para ´python3.8`
+```bash
+cd /bin
+ln -s python3.8 python
+```
+
+
