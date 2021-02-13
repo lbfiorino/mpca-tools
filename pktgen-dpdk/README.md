@@ -43,9 +43,7 @@ python3 -m pip install pyelftools sphinx
 No arquivo `/etc/default/grub`, adicionar os parâmetros de hugepages no `GRUB_CMDLINE_LINUX` conforme abaixo.
 
 ```
-...
 GRUB_CMDLINE_LINUX="default_hugepagesz=1G hugepagesz=1G hugepages=4"
-...
 ```
 Atualizar o GRUB e reiniciar.
 ```bash
@@ -112,7 +110,7 @@ make -j
 
 ## DPDK Dev Bind
 
-Em máquinas virtuais utilizar o driver `vfio-pci` sem IOMMU.
+Em máquinas virtuais (driver `virtio`), utilizar o driver `vfio-pci` sem IOMMU para o bind da placa de rede.
 ```bash
 # Se o módulo já estiver carregado (built-in module):
 echo 1 > /sys/module/vfio/parameters/enable_unsafe_noiommu_mode
@@ -123,13 +121,11 @@ modprobe vfio enable_unsafe_noiommu_mode=1
 
 Para persistir a configuração no-IOMMU, adicionar o parâmetro `vfio.enable_unsafe_noiommu_mode=1` no `GRUB_CMDLINE_LINUX` dentro do arquivo `/etc/default/grub`.
 ```bash
-...
 GRUB_CMDLINE_LINUX="default_hugepagesz=1G hugepagesz=1G hugepages=4 vfio.enable_unsafe_noiommu_mode=1"
-...
 ```
 
 
-Bind Nic:
+DPDK Bind NIC:
 ```bash
 # Listar as portas 
 dpdk-devbind.py --status
