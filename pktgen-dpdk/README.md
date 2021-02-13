@@ -57,7 +57,7 @@ reboot
 ## Install DPDK
 **Versão:** 19.11  
 :warning: Nota:
-> Versão 20.11 não gerou o RTE_TARGET: make install T=x86_64-native-linux-gcc -j
+> Versão 20.11 não gerou o RTE_TARGET: make install T=x86_64-native-linux-gcc
 
 ```bash
 cd /root/
