@@ -58,31 +58,19 @@ apt install python3-pip
 python3 -m pip install pyelftools sphinx
 ```
 
-Instalar DPDK.
 ```bash
 wget http://fast.dpdk.org/rel/dpdk-18.11.11.tar.xz
 tar xvf http://fast.dpdk.org/rel/dpdk-18.11.11.tar.xz
 
-rm -fr /usr/local/lib/x86_64-linux-gnu # DPDK changed a number of lib names and need to clean up
 cd dpdk-stable-18.11.11
-make install T=x86_64-native-linuxapp-gcc
-
-```
-On Ubuntu 20.04
-```bash
-export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
-```
-
-#### Build DPDK
- ```bash
 make install T=x86_64-native-linuxapp-gcc
 cd x86_64-native-linuxapp-gcc
 make install
  ```
+
 Criar link simbólico `python` para ´python3.8`
 ```bash
 cd /bin
 ln -s python3.8 python
 ```
-
 
