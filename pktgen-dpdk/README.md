@@ -129,10 +129,13 @@ reboot
 ```
 
 ### Persistir módulo no Ubuntu 18.04 (Kernel 4.15):
-Editar o arquivo `/etc/modules` e adicionar o módulo `vfio`.  
-Criar o arquivo `/etc/modprobe.d/vfio-noiommu.conf` com o conteúdo abaixo.
+Editar o arquivo `/etc/modules` e adicionar o módulo `vfio`.
 ```bash
-enable_unsafe_noiommu_mode=1
+echo vfio >> /etc/modules
+```
+Criar o arquivo `/etc/modprobe.d/vfio-noiommu.conf` com o parâmetro `enable_unsafe_noiommu_mode`.
+```bash
+echo "options vfio enable_unsafe_noiommu_mode=1" > /etc/modprobe.d/vfio-noiommu.conf
 ```
 
  DPDK Bind NIC:
