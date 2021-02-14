@@ -4,7 +4,7 @@
 ```
 
 ## Requisitos
-- DPDK ([Link Instalação versão 19.11](https://github.com/lbfiorino/pcap-replay-tools/tree/main/pktgen-dpdk))
+- DPDK ([Link Instalação versão 19.11](https://github.com/lbfiorino/pcap-replay-tools/tree/main/pktgen-dpdk#instalar-dpdk))
 - gcc >= 4.8
 - make
 - cmake
@@ -15,14 +15,19 @@
 apt-get install -y build-essential cmake linux-headers-`uname -r` pciutils libnuma-dev
 ```
 
-## Instalação
+## Instalação MoonGen
 ```bash
 cd /root
 git clone https://github.com/emmericp/MoonGen
 cd MoonGen
 ./build.sh
 ```
+
 ## DPDK Dev Bind
+:warning: Nota:
+> O MoonGen já inclui a versão 19.08 do DPDK, porém o `dpdk-devbind.py` incluso não reconhece o driver `vfio-pci`, necessário para máquinas virtuais.
+> Fazer o Bind com o DPDK 19.11.
+
 ```bash
 # Listar as portas 
 dpdk-devbind.py --status
@@ -31,7 +36,6 @@ dpdk-devbind.py --status
 # Porta diferente da LAN para não perder conexão
 dpdk-devbind.py -b vfio-pci 0000:00:07.0
 ```
-
 
 ## Replay PCAP
 O MoonGen tem um código de exemplo para replay de pcap: `examples/pcap/replay-pcap.lua`
