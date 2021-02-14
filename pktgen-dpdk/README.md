@@ -86,13 +86,13 @@ ninja install
 ldconfig  # make sure ld.so is pointing new DPDK libraries
 ```
 
-Criar RTE_TARGET:
+### Criar RTE_TARGET:
 ```bash
 cd /root/dpdk-stable-19.11.6
 make install T=x86_64-native-linux-gcc -j
 ```
 
-Exportar `PKG_CONFIG_PATH`:
+### Exportar PKG_CONFIG_PATH:
 ```bash
 export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
 ```
