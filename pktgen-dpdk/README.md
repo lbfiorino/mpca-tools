@@ -10,7 +10,7 @@ Instalação da ferramenta Pktgen e do framework DPDK nos sistemas operacionais 
 **IOMMU:** https://dpdk-guide.gitlab.io/dpdk-guide/setup/iommu.html  
 
 ## Requisitos
- - Sistema operacional atualizado
+ - Sistema operacional Ubuntu 20.04 / Ubuntu 18.04
  - Linux Headers
  - gcc 4.9+
  - cmake
