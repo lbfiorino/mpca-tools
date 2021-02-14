@@ -119,7 +119,7 @@ echo 1 > /sys/module/vfio/parameters/enable_unsafe_noiommu_mode
 modprobe vfio enable_unsafe_noiommu_mode=1
 ```
 
-Para persistir a configuração no-IOMMU, no caso de `buil-in module`, adicionar o parâmetro `vfio.enable_unsafe_noiommu_mode=1` no `GRUB_CMDLINE_LINUX` dentro do arquivo `/etc/default/grub`.
+No Ubuntu 20.04 (Kernel 5.4.0), para persistir a configuração no-IOMMU, no caso de `buil-in module`, adicionar o parâmetro `vfio.enable_unsafe_noiommu_mode=1` no `GRUB_CMDLINE_LINUX` dentro do arquivo `/etc/default/grub`.
 ```bash
 GRUB_CMDLINE_LINUX="default_hugepagesz=1G hugepagesz=1G hugepages=4 vfio.enable_unsafe_noiommu_mode=1"
 ```
