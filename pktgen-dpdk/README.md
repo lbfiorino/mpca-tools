@@ -92,7 +92,7 @@ cd /root/dpdk-stable-19.11.6
 make install T=x86_64-native-linux-gcc -j
 ```
 
-No Ubuntu 20.04, exportart `PKG_CONFIG_PATH`:
+Exportar `PKG_CONFIG_PATH`:
 ```bash
 export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
 ```
