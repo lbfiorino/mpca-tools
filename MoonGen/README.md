@@ -21,6 +21,8 @@ cd /root
 git clone https://github.com/emmericp/MoonGen
 cd MoonGen
 ./build.sh
-./bind-interfaces.sh
-./setup-hugetlbfs.sh
 ```
+## DPDK Dev Bind
+
+## Replay PCAP
+O MoonGen tem um código de exemplo para replay de pcap: `examples/pcap/replay-pcap.lua`
