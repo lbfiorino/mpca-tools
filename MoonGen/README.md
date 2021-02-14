@@ -23,6 +23,24 @@ cd MoonGen
 ./build.sh
 ```
 ## DPDK Dev Bind
+```bash
+# Listar as portas 
+dpdk-devbind.py --status
+
+# Bind Port
+# Porta diferente da LAN para não perder conexão
+dpdk-devbind.py -b vfio-pci 0000:00:07.0
+```
+
 
 ## Replay PCAP
 O MoonGen tem um código de exemplo para replay de pcap: `examples/pcap/replay-pcap.lua`
+```bash
+cd /root/MoonGen
+
+# ./build/MoonGen ./examples/pcap/replay-pcap.lua -s 30 -r 1 <PORT_NUMBER> <PCAP_FILE
+# PARAMS
+# -s 30 : Time to wait before stopping MoonGen after enqueuing all packets. Increase for pcaps with a very low rate. Default = 10 seconds. 
+# -r 1 : Speed up or slow down replay, 1 = use intervals from file, default = replay as fast as possible. Default = 0.
+./build/MoonGen ./examples/pcap/replay-pcap.lua -s 30 -r 1 0 /root/pcaps/smallFlows.pcap
+```
