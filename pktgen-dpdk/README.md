@@ -28,14 +28,14 @@ apt update
 apt full-upgrade
 reboot
 ```
-### Instalar requisitos `Ubuntu 20.04`
+### Instalar requisitos no Ubuntu 20.04
 ```bash
 apt install build-essential cmake pkg-config libpcap-dev meson ninja-build libnuma-dev linux-headers-`uname -r`
 apt install python3-pip
 python3 -m pip install pyelftools sphinx
 ```
 
-### Instalar requisitos `Ubuntu 18.04`
+### Instalar requisitos no Ubuntu 18.04
 No Ubuntu 18.04 o meson precisa ser instalado via Python Pip, pois a versão do repositório do Ubuntu é mais antiga.  
 Caso o meson esteja instalado via apt, remover e reiniciar antes de instalar via Python Pip.
 ```bash
