@@ -139,7 +139,7 @@ echo "options vfio enable_unsafe_noiommu_mode=1" > /etc/modprobe.d/vfio-noiommu.
 reboot
 ```
 
- DPDK Bind NIC:
+### DPDK Bind NIC:
 ```bash
 # Listar as portas 
 dpdk-devbind.py --status
