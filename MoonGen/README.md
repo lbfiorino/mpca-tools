@@ -4,7 +4,7 @@
 ```
 
 ## Requisitos
-- DPDK
+- DPDK ([Link Instalação versão 19.11](https://github.com/lbfiorino/pcap-replay-tools/tree/main/pktgen-dpdk))
 - gcc >= 4.8
 - make
 - cmake
