@@ -9,6 +9,8 @@ Instalação da ferramenta Pktgen e do framework DPDK.
 **Bind NIC drivers**: https://dpdk-guide.gitlab.io/dpdk-guide/setup/binding.html  
 **IOMMU:** https://dpdk-guide.gitlab.io/dpdk-guide/setup/iommu.html  
 
+Instalação realizada nos sistemas operacionais `Ubuntu 20.04` e `Ubuntu 18.04`.
+
 ## Requisitos
  - Sistema operacional atualizado
  - Linux Headers
