@@ -2,8 +2,8 @@
 
 Instalação da ferramenta Pktgen e do framework DPDK nos sistemas operacionais `Ubuntu 20.04` e `Ubuntu 18.04`.
 
-**DPDK:** [Site](http://core.dpdk.org/doc/), [Git](http://git.dpdk.org/)  
-**Pktgen:** [Site](https://pktgen-dpdk.readthedocs.io/en/latest/index.html), [GitHub](https://github.com/pktgen/Pktgen-DPDK/)
+**DPDK 19.11.6 :** [Site](http://core.dpdk.org/doc/), [Git](http://git.dpdk.org/)  
+**Pktgen 21.02.0:** [Site](https://pktgen-dpdk.readthedocs.io/en/latest/index.html), [GitHub](https://github.com/pktgen/Pktgen-DPDK/)
 
 **Linux Drivers:** https://doc.dpdk.org/guides/linux_gsg/linux_drivers.html  
 **Bind NIC drivers**: https://dpdk-guide.gitlab.io/dpdk-guide/setup/binding.html  
