@@ -5,10 +5,8 @@ Instalação da ferramenta Pktgen e do framework DPDK.
 **DPDK:** [Site](http://core.dpdk.org/doc/), [Git](http://git.dpdk.org/)  
 **Pktgen:** [Site](https://pktgen-dpdk.readthedocs.io/en/latest/index.html), [GitHub](https://github.com/pktgen/Pktgen-DPDK/)
 
-**Linux Drivers:**  
-https://doc.dpdk.org/guides/linux_gsg/linux_drivers.html  
-https://dpdk-guide.gitlab.io/dpdk-guide/setup/binding.html
-
+**Linux Drivers:** https://doc.dpdk.org/guides/linux_gsg/linux_drivers.html
+**Bind NIC drivers**: https://dpdk-guide.gitlab.io/dpdk-guide/setup/binding.html
 **IOMMU:** https://dpdk-guide.gitlab.io/dpdk-guide/setup/iommu.html
 
 ## Requisitos Ubuntu 20.04
@@ -119,18 +117,25 @@ echo 1 > /sys/module/vfio/parameters/enable_unsafe_noiommu_mode
 modprobe vfio enable_unsafe_noiommu_mode=1
 ```
 
-No Ubuntu 20.04 (Kernel 5.4.0), para persistir a configuração no-IOMMU, no caso de `buil-in module`, adicionar o parâmetro `vfio.enable_unsafe_noiommu_mode=1` no `GRUB_CMDLINE_LINUX` dentro do arquivo `/etc/default/grub`.
+### Persistir módulo no Ubuntu 20.04 (Kernel 5.4.0) com `buil-in module`:
+Adicionar o parâmetro `vfio.enable_unsafe_noiommu_mode=1` no `GRUB_CMDLINE_LINUX` dentro do arquivo `/etc/default/grub`.
 ```bash
 GRUB_CMDLINE_LINUX="default_hugepagesz=1G hugepagesz=1G hugepages=4 vfio.enable_unsafe_noiommu_mode=1"
 ```
-
 Atualizar o GRUB e reiniciar.
 ```bash
 update-grub
 reboot
 ```
 
-DPDK Bind NIC:
+### Persistir módulo no Ubuntu 18.04 (Kernel 4.15):
+Editar o arquivo `/etc/modules` e adicionar o módulo `vfio`.  
+Criar o arquivo `/etc/modprobe.d/vfio-noiommu.conf` com o conteúdo abaixo.
+```bash
+enable_unsafe_noiommu_mode=1
+```
+
+ DPDK Bind NIC:
 ```bash
 # Listar as portas 
 dpdk-devbind.py --status
