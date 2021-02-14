@@ -41,7 +41,7 @@ dpdk-devbind.py -b vfio-pci 0000:00:07.0
 ```
 
 ## Replay PCAP
-O MoonGen tem um código de exemplo para replay de pcap: `examples/pcap/replay-pcap.lua`
+O MoonGen tem um código de exemplo para replay de pcap: [`examples/pcap/replay-pcap.lua`](https://github.com/emmericp/MoonGen/blob/master/examples/pcap/replay-pcap.lua).
 ```bash
 cd /root/MoonGen
 
