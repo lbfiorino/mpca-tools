@@ -97,7 +97,7 @@ make install T=x86_64-native-linux-gcc -j
 export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
 ```
 
-## Install Pktgen
+## Instalação Pktgen 21.02.0
 
 ### Exportar variáveis RTE_SDK e RTE_TARGET
 ```bash
@@ -115,8 +115,8 @@ RTE_TARGET=x86_64-native-linux-gcc
 
 ### Build Pktgen:
 ```bash
-git clone http://dpdk.org/git/apps/pktgen-dpdk
-
+wget http://git.dpdk.org/apps/pktgen-dpdk/snapshot/pktgen-dpdk-pktgen-21.02.0.tar.xz
+tar xvf pktgen-dpdk-pktgen-21.02.0.tar.xz
 cd pktgen-dpdk
 make -j
 ```
