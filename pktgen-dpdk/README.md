@@ -50,7 +50,7 @@ python3 -m pip install pyelftools sphinx
 apt install build-essential cmake pkg-config libpcap-dev ninja-build libnuma-dev linux-headers-`uname -r`
 ```
 
-## Huge pages config 
+## Configurar Huge pages  
 [Documentação](https://doc.dpdk.org/guides/linux_gsg/sys_reqs.html#use-of-hugepages-in-the-linux-environment)
 
 No arquivo `/etc/default/grub`, adicionar os parâmetros de hugepages no `GRUB_CMDLINE_LINUX` conforme abaixo.
@@ -64,7 +64,7 @@ update-grub
 reboot
 ```
 
-## Install DPDK
+## Instalar DPDK
 **Versão:** 19.11 (Última versão no momento: 19.11.6)  
 [DPDK Download](http://core.dpdk.org/download/)  
 
@@ -97,7 +97,7 @@ make install T=x86_64-native-linux-gcc -j
 export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
 ```
 
-## Instalação Pktgen 21.02.0
+## Instalar Pktgen 21.02.0
 
 ### Exportar variáveis RTE_SDK e RTE_TARGET
 ```bash
@@ -121,7 +121,7 @@ cd pktgen-dpdk
 make -j
 ```
 
-## DPDK Dev Bind
+## Configurar interface de rede para DPDK (Dev Bind)
 
 Em máquinas virtuais (driver `virtio`), utilizar o driver `vfio-pci` sem IOMMU para o bind da placa de rede.
 ```bash
