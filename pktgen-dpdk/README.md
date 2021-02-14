@@ -1,6 +1,6 @@
 # Pktgen (Packet Gen-erator)
 
-Instalação da ferramenta Pktgen e do framework DPDK.
+Instalação da ferramenta Pktgen e do framework DPDK nos sistemas operacionais `Ubuntu 20.04` e `Ubuntu 18.04`.
 
 **DPDK:** [Site](http://core.dpdk.org/doc/), [Git](http://git.dpdk.org/)  
 **Pktgen:** [Site](https://pktgen-dpdk.readthedocs.io/en/latest/index.html), [GitHub](https://github.com/pktgen/Pktgen-DPDK/)
@@ -8,8 +8,6 @@ Instalação da ferramenta Pktgen e do framework DPDK.
 **Linux Drivers:** https://doc.dpdk.org/guides/linux_gsg/linux_drivers.html  
 **Bind NIC drivers**: https://dpdk-guide.gitlab.io/dpdk-guide/setup/binding.html  
 **IOMMU:** https://dpdk-guide.gitlab.io/dpdk-guide/setup/iommu.html  
-
-Instalação realizada nos sistemas operacionais `Ubuntu 20.04` e `Ubuntu 18.04`.
 
 ## Requisitos
  - Sistema operacional atualizado
