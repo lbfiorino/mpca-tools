@@ -12,7 +12,7 @@ editcap -F pcap -A "2018-12-01 13:29:00" -B "2018-12-01 13:34:00" <PCAP_INFILE> 
 
 ### Show frame number and frame size
 ```bash
-tshark -T fields frame.number -e frame.len -r <PCAP_FILE>
+tshark -T fields -e frame.number -e frame.len -r <PCAP_FILE>
 ```
 
 ###  Get Average packet rate from PCAP file
