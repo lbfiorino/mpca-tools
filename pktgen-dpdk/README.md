@@ -115,9 +115,11 @@ RTE_TARGET=x86_64-native-linux-gcc
 
 ### Build Pktgen:
 ```bash
+cd /root
 wget http://git.dpdk.org/apps/pktgen-dpdk/snapshot/pktgen-dpdk-pktgen-21.02.0.tar.xz
 tar xvf pktgen-dpdk-pktgen-21.02.0.tar.xz
-cd pktgen-dpdk
+
+cd pktgen-dpdk-pktgen-21.02.0
 make -j
 ```
 
