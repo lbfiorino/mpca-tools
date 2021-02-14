@@ -140,7 +140,9 @@ dpdk-devbind.py --status
 dpdk-devbind.py -b vfio-pci 0000:00:07.0
 ```
 
-## Send PCAP
+## Replay PCAP
+
+Iniciar o Pktgen:
 ```bash
 # PARAMS
 # -l 0-1 : Corelist - two lcores: core 0 monitoring, core 1 send packets
@@ -162,3 +164,4 @@ set 0 count <pcap_total_packets>
 # Start send packets
 start 0
 ```
+Se não for definido o número de pacotes `set <port_number> count <num_packets>`, o Pktgen fica em loop até a execução do comando `stop <port_number>`.
