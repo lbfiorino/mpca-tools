@@ -6,6 +6,7 @@ TODO
 - Verificar MTU
 ```
 [GitHub Link](https://github.com/emmericp/MoonGen)
+[Paper](https://www.net.in.tum.de/fileadmin/bibtex/publications/papers/MoonGen_IMC2015.pdf)
 
 ## Requisitos
 - DPDK ([Link Instalação versão 19.11](https://github.com/lbfiorino/pcap-replay-tools/tree/main/pktgen-dpdk#instalar-dpdk))
