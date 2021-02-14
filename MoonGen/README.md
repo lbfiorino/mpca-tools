@@ -5,8 +5,8 @@
 TODO
 - Verificar MTU
 ```
-[GitHub Link](https://github.com/emmericp/MoonGen)  
-Paper - [MoonGen: A Scriptable High-Speed Packet Generator](https://doi-org.ez120.periodicos.capes.gov.br/10.1145/2815675.2815692)
+[MoonGen GitHub](https://github.com/emmericp/MoonGen)  
+Paper - [MoonGen: A Scriptable High-Speed Packet Generator](https://dl.acm.org/doi/abs/10.1145/2815675.2815692)
 
 ## Requisitos
 - DPDK ([Link Instalação versão 19.11](https://github.com/lbfiorino/pcap-replay-tools/tree/main/pktgen-dpdk#instalar-dpdk))
