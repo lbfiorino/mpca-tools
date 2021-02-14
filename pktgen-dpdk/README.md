@@ -133,9 +133,10 @@ Editar o arquivo `/etc/modules` e adicionar o módulo `vfio`.
 ```bash
 echo vfio >> /etc/modules
 ```
-Criar o arquivo `/etc/modprobe.d/vfio-noiommu.conf` com o parâmetro `enable_unsafe_noiommu_mode`.
+Criar o arquivo `/etc/modprobe.d/vfio-noiommu.conf` com o parâmetro `enable_unsafe_noiommu_mode` e reiniciar.
 ```bash
 echo "options vfio enable_unsafe_noiommu_mode=1" > /etc/modprobe.d/vfio-noiommu.conf
+reboot
 ```
 
  DPDK Bind NIC:
