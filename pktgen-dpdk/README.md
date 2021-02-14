@@ -16,23 +16,38 @@ Instalação da ferramenta Pktgen e do framework DPDK nos sistemas operacionais 
  - cmake
  - pkg-config
  - libpcap-dev
- - meson
+ - meson 0.47.1+
  - ninja-build
  - libnuma-dev
  - python pyelftools
  - python sphinx
 
-Atualizar o SO.
+### Atualizar o SO.
 ```bash
 apt update
 apt full-upgrade
 reboot
 ```
-Instalar requisitos.
+### Instalar requisitos `Ubuntu 20.04`:
 ```bash
 apt install build-essential cmake pkg-config libpcap-dev meson ninja-build libnuma-dev linux-headers-`uname -r`
 apt install python3-pip
 python3 -m pip install pyelftools sphinx
+```
+
+### Instalar requisitos `Ubuntu 18.04`:
+No Ubuntu 18.04 o meson precisa ser instalado via Python Pip, pois a versão do repositório do Ubuntu é mais antiga.  
+Caso o meson esteja instalado via apt, remover e reiniciar antes de instalar via Python Pip.
+```bash
+apt purge meson
+reboot
+```
+Após reiniciar:
+```bash
+apt install python3-pip
+python3 -m pip install meson --upgrade
+python3 -m pip install pyelftools sphinx
+apt install build-essential cmake pkg-config libpcap-dev ninja-build libnuma-dev linux-headers-`uname -r`
 ```
 
 ## Huge pages config 
