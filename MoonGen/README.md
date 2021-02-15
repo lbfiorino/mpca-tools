@@ -5,7 +5,7 @@
 - Verificar MTU
 - Aplicar Patch device.c na branch master e recompilar para habilitar jumbo frame
 
-- Testar branck dpdk-19.05 
+- Testar branch dpdk-19.05 
 ```
 [MoonGen GitHub](https://github.com/emmericp/MoonGen)  
 Paper (IMC 2015) [MoonGen: A Scriptable High-Speed Packet Generator](https://dl.acm.org/doi/abs/10.1145/2815675.2815692)
