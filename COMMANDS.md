@@ -1,46 +1,47 @@
 ## Comandos
 
 ### Linux
-
 #### Cria par de interfaces virtuais para testes (se enviar por veth0, veth1 recebe)
 ```bash
 ip link add veth0 type veth peer name veth1
 ```
 
 ### Wireshark
-
 #### Extrai pacotes do PCAP no intervalo de tempo
 ```bash
 editcap -F pcap -A "2018-12-01 13:29:00" -B "2018-12-01 13:34:00" <PCAP_INFILE> <PCAP_OUTFILE>
 ```
-
 #### Show frame number and frame size
 ```bash
 tshark -T fields -e frame.number -e frame.len -r <PCAP_FILE>
 ```
-
 ####  Get Average packet rate from PCAP file
 ```bash
 capinfos -x <PCAP_FILE> | grep 'Average packet rate' | awk '{print $4}' | tr -d ',.'
 ```
-
 #### Exibe o tamanho do menor e do maior pacote dentro do PCAP (para definir o MTU)
 ```bash
 tshark -T fields -e frame.len -r <PCAP_FILE> | awk 'BEGIN{min=1500; max=0}{if ($1<0+min) min=$1; else if($1>0+max) max=$1} END{print "Min packet: "min; print "Max packet: "max}'
 ```
-
 #### Captura pacotes, mostra na tela (-P) e salva no arquivo (-w) no formato .pcap (-F pcap)
 ```bash
 tshark -P -F pcap -i veth0 -w <PCAP_OUTFILE>
-
 ```
-### Tshark read and display individual packets from PCAP
+#### Ler um pacote específico do PCAP
 ```bash
-tshark -r <pcap-file> -Y frame.number==<number> -V
+# Parâmetro -V mostra detalhes do pacote na tela
+tshark -r <pcap-file> -Y "frame.number==1" -V
+```
+#### Ler pacotes do PCAP com tamanhos específicos
+```bash
+# Frame length
+tshark -r <pcap-file> -Y "frame.len>=1514"
+
+# IP length
+tshark -r <pcap-file> -Y "ip.len>=1500"
 ```
 
 ### Tcpreplay
-
 #### Replay preservando o timestamp e com cache em memória do PCAP
 Para melhor desempenho colocar o arquivo PCAP em um diretório TMPFS.  
 Caso haja memória suficiente, fazer cache em memória do PCAP com o parâmetro `--preload-pcap`.  
