@@ -33,6 +33,27 @@ As casas decimais no parâmetro `--multiplier` interferem no desempenho.
 tcpreplay --intf1=veth0 --multiplier=1.000000 --preload-pcap <PCAP_FILE>
 ```
 
+### Pktgen-DPDK
+```
+# PARAMS
+# -l 0-2 : Corelist - three lcores: core 0 monitoring, core 1 and 2 to send and receive packets
+# -n 3 : Three memory channel
+# --proc-type auto : Type of this process (primary|secondary|auto), auto = typical
+# -v : Show dpdk version
+# -T : Color output
+# -P : Promiscuous mode
+# -s 0:<pcapfile> : PCAP packet stream file, 'P' is the port number
+# -j : Enable jumbo frames of 9600 bytes
+# -m "[1:2].0" : core 1 handles port 0 rx, core 2 handles port 0 tx
+
+./pktgen -l 0-2 -n 3 --proc-type auto --socket-mem 2048 -v -- -T -P -s 0:<pcapfile> -j -m "[1:2].0"
+```
+
+### Replay PCAP with MoonGen
+```bash
+./build/MoonGen ./examples/pcap/replay-pcap.lua -s 30 -r 1 0 <PCAP_FILE>
+```
+
 ### Captura pacotes, mostra na tela (-P) e salva no arquivo (-w) no formato .pcap (-F pcap)
 ```bash
 tshark -P -F pcap -i veth0 -w <PCAP_OUTFILE>
