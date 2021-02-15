@@ -63,5 +63,5 @@ tshark -P -F pcap -i veth0 -w <PCAP_OUTFILE>
 
 ### Tshark read and display individual packets from PCAP
 ```bash
-tshark -r <pcap-file> -x -R frame.number==<number>
+tshark -r <pcap-file> -Y frame.number==<number>
 ```
