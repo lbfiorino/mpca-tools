@@ -182,6 +182,20 @@ cd /root/pktgen-dpdk-pktgen-21.02.0/usr/local/bin/
 # -j : Enable jumbo frames of 9600 bytes
 
 ./pktgen -l 0-1 -n 1 -- -m 1.0 -T -P -s 0:/root/pcaps/smallFlows.pcap -j
+
+##### Other #####
+# PARAMS
+# -l 0-2 : Corelist - three lcores: core 0 monitoring, core 1 and 2 to send and receive packets
+# -n 2 : Two memory channel
+# --proc-type auto : Type of this process (primary|secondary|auto), auto = typical
+# -v : Show dpdk version
+# -T : Color output
+# -P : Promiscuous mode
+# -s 0:<pcapfile> : PCAP packet stream file, 'P' is the port number
+# -j : Enable jumbo frames of 9600 bytes
+# -m "[1:2].0" : core 1 handles port 0 rx, core 2 handles port 0 tx
+./pktgen -l 0-2 -n 2 --proc-type auto --socket-mem 2048 -v -- -T -P -s 0:/root/pcaps/smallFlows.pcap -j -m "[1:2].0"
+
 ```
 No console do Pktgen:
 ```bash
