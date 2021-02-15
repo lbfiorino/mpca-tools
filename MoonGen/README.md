@@ -34,7 +34,10 @@ Criar link simbólico para a lib `libtbbmalloc.so.2` dentro do diretório `/usr/
 cd /usr/lib
 ln -s /root/MoonGen/build/libmoon/tbb_cmake_build/tbb_cmake_build_subdir_release/libtbbmalloc.so.2 libtbbmalloc.so.2
 ```
-
+Para verificar se encontrou todas as libs:
+```bash
+ldd /root/MoonGen/build/MoonGen
+```
 
 ## DPDK Dev Bind
 :warning: Nota:
