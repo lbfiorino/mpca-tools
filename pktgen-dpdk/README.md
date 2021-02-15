@@ -183,12 +183,12 @@ cd /root/pktgen-dpdk-pktgen-21.02.0/usr/local/bin/
 
 ./pktgen -l 0-1 -n 1 -- -m 1.0 -T -P -s 0:/root/pcaps/smallFlows.pcap -j
 
-##### Other #####
+##### A more typical commandline to start pktgen #####
 # PARAMS
 # -l 0-2 : Corelist - three lcores: core 0 monitoring, core 1 and 2 to send and receive packets
 # -n 3 : Three memory channel
 # --proc-type auto : Type of this process (primary|secondary|auto), auto = typical
-# --socket-mem : Memory to allocate on sockets (comma separated values)
+# --socket-mem : Memory to allocate on CPU sockets (comma separated values)
 # -v : Show dpdk version
 # -T : Color output
 # -P : Promiscuous mode
