@@ -23,7 +23,7 @@ http://core.dpdk.org/
 Arquivo contendo comandos para utilização das ferramentas.
 
 #### Arquivo `requirements.txt` 
-Arquivo contendo os pacotes python.
+Arquivo contendo pacotes python.
 
 ```bash
 # Install and Upgrade all packages to the newest available version. 
