@@ -176,6 +176,7 @@ cd /root/pktgen-dpdk-pktgen-21.02.0/usr/local/bin/
 # PARAMS
 # -l 0-1 : Corelist - two lcores: core 0 monitoring, core 1 send packets
 # -n 1 : One memory channel
+# -- : Separate EAL parameters from Pktgen parameters
 # -T : Color output
 # -P : Promiscuous mode
 # -s 0:<pcapfile> : PCAP packet stream file, 'P' is the port number
@@ -190,6 +191,7 @@ cd /root/pktgen-dpdk-pktgen-21.02.0/usr/local/bin/
 # --proc-type auto : Type of this process (primary|secondary|auto), auto = typical
 # --socket-mem : Memory to allocate on CPU sockets (comma separated values)
 # -v : Show dpdk version
+# -- : Separate EAL parameters from Pktgen parameters
 # -T : Color output
 # -P : Promiscuous mode
 # -s 0:<pcapfile> : PCAP packet stream file, 'P' is the port number
