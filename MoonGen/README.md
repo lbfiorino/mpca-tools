@@ -29,6 +29,12 @@ git clone https://github.com/emmericp/MoonGen
 cd MoonGen
 ./build.sh
 ```
+Criar link simbólico para a lib `libtbbmalloc.so.2` dentro do diretório `/usr/bin`. O MoonGen não encontrou automaticamene.
+```bash
+cd /usr/lib
+ln -s /root/MoonGen/build/libmoon/tbb_cmake_build/tbb_cmake_build_subdir_release/libtbbmalloc.so.2 libtbbmalloc.so.2
+```
+
 
 ## DPDK Dev Bind
 :warning: Nota:
