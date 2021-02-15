@@ -68,8 +68,8 @@ Mapear os metadados do arquivo pcap.
 gopherCap map --dir-src /mnt/pcap --file-suffix "pcap" --dump-json /mnt/pcap/meta.json
 # Option --file-regexp to filter files.
 # e.g. 
-# --file-regex ".test." (todos os arquivos com 'test' no nome)
-# --file-regex "test\.pcap" (apenas o arquivo test.pcap)
+# --file-regexp ".test." (todos os arquivos com 'test' no nome)
+# --file-regexp "test\.pcap" (apenas o arquivo test.pcap)
 ```
 
 Replay do pcap.
