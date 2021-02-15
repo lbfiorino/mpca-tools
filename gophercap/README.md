@@ -65,11 +65,15 @@ export PATH=$PATH:/root/go/bin/
 ### Replay PCAP
 Mapear os metadados do arquivo pcap.
 ```bash
+# gopherCap map --dir-src <pcaps-dir> --file-suffix "pcap" --dump-json <file.meta.json>
+# Exemplo:
 gopherCap map --dir-src /mnt/pcap --file-suffix "pcap" --dump-json /mnt/pcap/meta.json
 # Option --file-regexp to filter files.
 # e.g. 
 # --file-regexp ".test." (todos os arquivos com 'test' no nome)
 # --file-regexp "test\.pcap" (apenas o arquivo test.pcap)
+gopherCap map --dir-src /mnt/pcap --file-regex "test\.pcap" --dump-json /mnt/pcap/teste.meta.json
+
 ```
 
 Replay do pcap.
