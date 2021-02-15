@@ -168,8 +168,8 @@ dpdk-devbind.py -b vfio-pci 0000:00:07.0
 
 ## Replay PCAP
 
-Iniciar o Pktgen:
-
+Iniciar o Pktgen:  
+Help: `./pktgen -h`
 ```bash
 cd /root/pktgen-dpdk-pktgen-21.02.0/usr/local/bin/
 
@@ -194,9 +194,10 @@ cd /root/pktgen-dpdk-pktgen-21.02.0/usr/local/bin/
 # -s 0:<pcapfile> : PCAP packet stream file, 'P' is the port number
 # -j : Enable jumbo frames of 9600 bytes
 # -m "[1:2].0" : core 1 handles port 0 rx, core 2 handles port 0 tx
-./pktgen -l 0-2 -n 2 --proc-type auto --socket-mem 2048 -v -- -T -P -s 0:/root/pcaps/smallFlows.pcap -j -m "[1:2].0"
 
+./pktgen -l 0-2 -n 2 --proc-type auto --socket-mem 2048 -v -- -T -P -s 0:/root/pcaps/smallFlows.pcap -j -m "[1:2].0"
 ```
+
 No console do Pktgen:
 ```bash
 # Mostra informações do PCAP
