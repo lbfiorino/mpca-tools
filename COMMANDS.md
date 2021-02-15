@@ -32,7 +32,6 @@ As casas decimais no parâmetro `--multiplier` interferem no desempenho.
 ```bash
 tcpreplay --intf1=veth0 --multiplier=1.000000 --preload-pcap <PCAP_FILE>
 ```
-
 ### Pktgen-DPDK
 ```
 ##### A more typical commandline to start pktgen #####
@@ -60,4 +59,9 @@ tcpreplay --intf1=veth0 --multiplier=1.000000 --preload-pcap <PCAP_FILE>
 ### Captura pacotes, mostra na tela (-P) e salva no arquivo (-w) no formato .pcap (-F pcap)
 ```bash
 tshark -P -F pcap -i veth0 -w <PCAP_OUTFILE>
+```
+
+### Tshark read and display individual packets from PCAP
+```bash
+tshark -r <pcap-file> -x -R frame.number==<number>
 ```
