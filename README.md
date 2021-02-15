@@ -26,6 +26,6 @@ Arquivo contendo comandos para utilização das ferramentas.
 Arquivo contendo pacotes python.
 
 ```bash
-# Install and Upgrade all packages to the newest available version. 
+# Install and Upgrade all packages in requirements.txt to the newest available version. 
 python3 -m pip install -r requirements.txt --upgrade
 ```
