@@ -42,6 +42,7 @@ tcpreplay --intf1=veth0 --multiplier=1.000000 --preload-pcap <PCAP_FILE>
 # --proc-type auto : Type of this process (primary|secondary|auto), auto = typical
 # --socket-mem : Memory to allocate on CPU sockets (comma separated values)
 # -v : Show dpdk version
+# -- : Separate EAL parameters from Pktgen parameters
 # -T : Color output
 # -P : Promiscuous mode
 # -s 0:<pcapfile> : PCAP packet stream file, 'P' is the port number
