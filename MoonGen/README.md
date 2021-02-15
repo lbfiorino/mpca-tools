@@ -30,8 +30,8 @@ cd MoonGen
 
 ## DPDK Dev Bind
 :warning: Nota:
-> O MoonGen já inclui a versão 19.08 do DPDK, porém o `dpdk-devbind.py` incluso não reconhece o driver `vfio-pci`, necessário para máquinas virtuais.
-> Fazer o Bind com o DPDK 19.11.
+> O MoonGen inclui a versão 17.08 do DPDK na branch master, porém o `dpdk-devbind.py` incluso não reconhece o driver `vfio-pci`, o qual é necessário para máquinas virtuais com driver `virtio`.
+> Neste caso, fazer o Bind utilizando o `dpdk-devbind.py` do DPDK 19.11.
 
 ```bash
 # Listar as portas 
