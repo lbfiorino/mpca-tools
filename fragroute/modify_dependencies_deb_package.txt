@@ -18,3 +18,4 @@ tar cvzf control.tar.gz conffiles control md5sums postinst
 
 # Create new .deb package
 ar rcs new_package.deb debian-binary control.tar.gz data.tar.gz
+
