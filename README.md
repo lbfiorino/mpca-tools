@@ -12,7 +12,7 @@ https://github.com/StamusNetworks/gophercap
 https://github.com/pktgen/Pktgen-DPDK  
 http://core.dpdk.org/  
 
-- MoonGen  
+- MoonGen (DPDK)  
 https://github.com/emmericp/MoonGen/
 
 - dpdk-burst-replay  
