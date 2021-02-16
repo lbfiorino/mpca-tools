@@ -67,7 +67,7 @@ Atualizar a lista de pacotes dos repostitórios como comando `apt update`
 ### 2. Instalar o Kernel Headers
 Por padrão o Ubuntu já instala o kernel headers. Mas caso seja necessário:
 ```bash
-apt install linux-headers-<kernel-version>
+apt install linux-headers-`uname -r`
 ```
 
 ### 3. Instalar o Kernel Sources
