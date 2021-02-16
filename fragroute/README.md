@@ -9,6 +9,8 @@
 - fragroute_1.2-8Ubuntu20.04_amd64.deb - Pacote adaptado para o Ubuntu 20.04
 
 ## Instalação do pacote compilado do Kali Linux no Debian 10
+:warning: Nota:
+> No Ubuntu 20.04 utilizar instalar `libevent-2.1-7` e utilizar o pacote `fragroute_1.2-8Ubuntu20.04_amd64.deb`.
 
 ### Requisitos
 - Debian 10
