@@ -4,7 +4,7 @@ Instalação da ferramenta Tcpreplay com o framework netmap para replicar arquiv
 **Tcpreplay:** [Site](https://tcpreplay.appneta.com/), [GitHub](https://github.com/appneta/tcpreplay)  
 **netmap:** [Site](http://info.iet.unipi.it/~luigi/netmap/), [GitHub](https://github.com/luigirizzo/netmap)
 
-**Fragroute:** Permite fragmentar os pacotes. Precisa ser instalado antes do Tcpreplay. [[Link da instalação](https://github.com/lbfiorino/pcap-replay-tools/tree/main/fragroute), [Como utilizar](tcpreplay_fragroute.pdf), [Link GitHub](https://github.com/appneta/tcpreplay/issues/180)].
+**Fragroute:** Permite fragmentar os pacotes. Precisa ser instalado antes do Tcpreplay. [[Link da instalação](https://github.com/lbfiorino/pcap-replay-tools/tree/main/fragroute), [Como utilizar](tcpreplay_fragroute.pdf), [Link GitHub](https://github.com/appneta/tcpreplay/issues/180)].  
 :warning: Nota:
 > O fragroute foi instalado com sucesso no Debian 10. Precisar de testes no Ubuntu 20.04.
 
