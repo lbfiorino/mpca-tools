@@ -2,6 +2,9 @@
 
 **Sources:** [fragroute](https://www.monkey.org/~dugsong/fragroute/), [libdnet](http://libdnet.sourceforge.net/).
 
+Por ser antigo, gerou erros de compilação em sistemas operacionais recentes.  
+Para a instalação, foi utilizado um pacote já compilado do Kali Linux.
+
 ## Pacotes compliados:
 - fragroute_1.2-8kali1_amd64.deb - [Kali Linux 2.0 (Debian 10)](http://kalirepo.pxinfra.net/kali-rolling/pool/main/f/fragroute/)
 - fragroute_1.2-7.1_amd64.deb - [Ubuntu 8.04 LTS (Hardy)](https://launchpad.net/ubuntu/hardy/amd64/fragroute/1.2-7.1)
