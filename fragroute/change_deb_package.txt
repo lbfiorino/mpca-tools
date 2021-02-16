@@ -1,8 +1,0 @@
-ar x package.deb
-tar xvzf control.tar.gz
-rm control.tar.gz
-----------------------------------
-Edit files : control, postinst
-----------------------------------
-tar cvzf control.tar.gz conffiles control md5sums postinst
-ar rcs package.deb debian-binary control.tar.gz data.tar.gz

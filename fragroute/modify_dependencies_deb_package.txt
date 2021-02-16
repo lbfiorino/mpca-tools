@@ -1,0 +1,19 @@
+
+# MODIFY DEPENDENCIES
+
+# Extract deb
+ar x package.deb
+
+# Extract control
+tar xvzf control.tar.gz
+
+# Edit dependencies in control file
+
+# Remove original control
+rm control.tar.gz
+
+# Create new control
+tar cvzf control.tar.gz conffiles control md5sums postinst
+
+# Create new .deb package
+ar rcs package.deb debian-binary control.tar.gz data.tar.gz
