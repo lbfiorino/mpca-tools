@@ -23,7 +23,7 @@ Para a instalação, foi utilizado um pacote já compilado do Kali Linux.
 - [libdnet 1.11](http://libdnet.sourceforge.net/)
 
 ```bash
-apt install  libc6 libdumbnet1 libevent-2.1-6 libpcap0.8
+apt install build-essential libc6 libdumbnet1 libevent-2.1-6 libpcap0.8
 ```
 ### Instalar libdnet
 ```bash
