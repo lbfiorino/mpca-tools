@@ -4,6 +4,8 @@ Instalação da ferramenta Tcpreplay com o framework netmap para replicar arquiv
 **Tcpreplay:** [Site](https://tcpreplay.appneta.com/), [GitHub](https://github.com/appneta/tcpreplay)  
 **netmap:** [Site](http://info.iet.unipi.it/~luigi/netmap/), [GitHub](https://github.com/luigirizzo/netmap)
 
+**Suporte a fragroute:** Instalar o fragroute antes. [Link da instalação](https://github.com/lbfiorino/pcap-replay-tools/tree/main/fragroute)
+
 [Tcpreplay FAQ](https://tcpreplay.appneta.com/wiki/faq.html)  
 [How can I make tcpreplay run even faster?](https://tcpreplay.appneta.com/wiki/faq.html#how-can-i-make-tcpreplay-run-even-faster)
 
