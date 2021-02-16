@@ -10,7 +10,7 @@
 
 ## Instalação do pacote compilado do Kali Linux no Debian 10
 :warning: Nota:
-> No Ubuntu 20.04 instalar `libevent-2.1-7` e utilizar o pacote `[fragroute_1.2-8Ubuntu20.04_amd64.deb](fragroute_1.2-8Ubuntu20.04_amd64.deb)`.  
+> No Ubuntu 20.04 instalar `libevent-2.1-7` e utilizar o pacote [`fragroute_1.2-8Ubuntu20.04_amd64.deb`](fragroute_1.2-8Ubuntu20.04_amd64.deb).  
 
 ### Requisitos
 - Debian 10
