@@ -15,7 +15,7 @@ http://core.dpdk.org/
 - `/MoonGen`MoonGen (DPDK)  
 https://github.com/emmericp/MoonGen/
 
-- `dpdk-burst-replay` - dpdk-burst-replay  
+- `/dpdk-burst-replay` - dpdk-burst-replay  
 https://github.com/FraudBuster/dpdk-burst-replay  
 http://core.dpdk.org/  
 
