@@ -136,7 +136,7 @@ echo 9000 > /sys/module/netmap/parameters/buf_size
 Para habilitar o suporte ao netmap, deve-se utilizar o parâmetro `--with-netmap` informando o diretório da instalação do netmap feita no passo anterior.
 
 ```bash
-apt install build-essential libpcap-dev
+apt install build-essential libpcap-dev autogen
 cd /root
 wget https://github.com/appneta/tcpreplay/releases/download/v4.3.3/tcpreplay-4.3.3.tar.xz
 tar xvf tcpreplay-4.3.3.tar.xz
