@@ -165,6 +165,12 @@ reboot
 ```
 
 ### DPDK Bind NIC:
+
+Criar o link simbólico para `python`, pois o DPDK não encontra o `python3`.
+```bash
+ln -s /usr/bin/python3 /usr/bin/python
+```
+
 ```bash
 # Listar as portas 
 dpdk-devbind.py --status
