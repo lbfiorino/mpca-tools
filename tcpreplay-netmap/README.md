@@ -11,7 +11,7 @@ Instalação da ferramenta Tcpreplay com o framework netmap para replicar arquiv
 > - Since tcpreplay is not multi-threaded, SMP or dual-core processors won’t help very much. However, other processes can run on the other CPU(s).
 > - Turn off hyperthreading (HT) if your CPU supports it.
 
-**Fragroute (option --fragroute=conf.cfg):** Permite fragmentar os pacotes. Precisa ser instalado antes do Tcpreplay. [[Link da instalação](https://github.com/lbfiorino/pcap-replay-tools/tree/main/fragroute), [Como utilizar](tcpreplay_fragroute.pdf), [Issue GitHub](https://github.com/appneta/tcpreplay/issues/180)].  
+**Fragroute (option --fragroute=conf.cfg in tcprewrite):** Permite fragmentar os pacotes. Precisa ser instalado antes do Tcpreplay. [[Link da instalação](https://github.com/lbfiorino/pcap-replay-tools/tree/main/fragroute), [Como utilizar](tcpreplay_fragroute.pdf), [Issue GitHub](https://github.com/appneta/tcpreplay/issues/180)].  
 :warning: Nota:
 > O fragroute foi instalado inicialmente no Debian 10.  
 > O pacote fragroute foi adaptado para o Ubuntu 20.04.
