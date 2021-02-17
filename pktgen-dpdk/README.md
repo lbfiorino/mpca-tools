@@ -96,7 +96,7 @@ make install T=x86_64-native-linux-gcc -j
 ```bash
 export PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
 ```
-Para persistir as variáveis, adicionar a linha abaixo no arquivo `/etc/environment`:
+Para persistir a variável PKG_CONFIG_PATH, adicionar a linha abaixo no arquivo `/etc/environment`:
 ```bash
 PKG_CONFIG_PATH=/usr/local/lib/x86_64-linux-gnu/pkgconfig
 ```
