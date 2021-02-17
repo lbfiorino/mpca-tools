@@ -3,7 +3,7 @@
 - EM CONSTRUÇÃO
 
 - Verificar MTU
-- Aplicar Patch device.c na branch master e recompilar para habilitar jumbo frame
+- Aplicar Patch no arquivo device.c da branch master (dpdk 17.08), recompilar para habilitar jumbo frame e testar
 
 - Testar branch dpdk-19.05 
 ```
