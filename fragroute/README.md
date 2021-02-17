@@ -7,15 +7,12 @@ Para a instalação, foi utilizado um pacote já compilado do Kali Linux.
 
 ## Pacotes compliados:
 - fragroute_1.2-8kali1_amd64.deb - [Kali Linux Rolling (Debian 10)](http://kalirepo.pxinfra.net/kali-rolling/pool/main/f/fragroute/) - **com dependências**.
+- fragroute_1.2-8kali1_amd64.deb - [Old Kali Linux Rolling](http://old.kali.org/kali/pool/main/f/fragroute/fragroute_1.2-8kali1_amd64.deb) - **sem dependências**.
+- fragroute_1.2-7.2kali2_amd64.deb - [Kali Linux 2.0 (Debian 8)](http://old.kali.org/kali/pool/main/f/fragroute/fragroute_1.2-7.2kali2_amd64.deb)
 - fragroute_1.2-7.1_amd64.deb - [Ubuntu 8.04 LTS (Hardy)](https://launchpad.net/ubuntu/hardy/amd64/fragroute/1.2-7.1)
 - fragroute_1.2-8Ubuntu20.04_amd64.deb - Pacote adaptado para o Ubuntu 20.04
 
-- Outros links para os pacotes:
-  - fragroute_1.2-8kali1_amd64.deb - [Old Kali Linux Rolling](http://old.kali.org/kali/pool/main/f/fragroute/fragroute_1.2-8kali1_amd64.deb) - **sem dependências**.
-  - fragroute_1.2-7.2kali2_amd64.deb - [Kali Linux 2.0 (Debian 8)](http://old.kali.org/kali/pool/main/f/fragroute/fragroute_1.2-7.2kali2_amd64.deb)
- 
-
-## Instalação do pacote compilado do Kali Linux no Debian 10
+## Instalação do pacote compilado do Kali Linux Rolling (Debian 10)
 :warning: Nota:
 > No Ubuntu 20.04 instalar `libevent-2.1-7` e utilizar o pacote [`fragroute_1.2-8Ubuntu20.04_amd64.deb`](fragroute_1.2-8Ubuntu20.04_amd64.deb).  
 
