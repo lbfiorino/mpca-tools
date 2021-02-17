@@ -1,6 +1,6 @@
 # Fragroute
 Instalação da ferramenta fragroute no Debian 10 e Ubuntu 20.04 (com pacote adaptado).  
-Ferramenta utilizada pelo Tcprelay (tcprewrite) para fragmentar pacotes.
+Esta ferramenta é utilizada pelo tcprewrite do Tcpreplay para fragmentar pacotes (opção --fragroute=conf.cfg).
 
 **Sources:** [fragroute](https://www.monkey.org/~dugsong/fragroute/), [libdnet](http://libdnet.sourceforge.net/).
 
