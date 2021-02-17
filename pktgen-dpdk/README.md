@@ -243,4 +243,4 @@ set 0 count <pcap_total_packets>
 # Start send packets
 start 0
 ```
-Se não for definido o número de pacotes `set <port_number> count <num_packets>`, o Pktgen fica em loop até a execução do comando `stop <port_number>`.
+:warning: Se não for definido o número de pacotes `set <port_number> count <num_packets>`, o Pktgen fica em loop até a execução do comando `stop <port_number>`.
