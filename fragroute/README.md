@@ -53,8 +53,7 @@ Verificar se encontrou todas as libs:
 ldd /usr/sbin/fragroute
 ```
 
-:warning: Nota:  
-Caso não tenha encontrado todas as libs, verificar se o arquivo `/etc/environment` contém a linha abaixo e reiniciar a máquina.
+:warning: Caso não tenha encontrado todas as libs, verificar se o arquivo `/etc/environment` contém a linha abaixo e reiniciar a máquina.
 ```bash
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 ```
