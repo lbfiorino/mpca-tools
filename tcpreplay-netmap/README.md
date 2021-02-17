@@ -7,7 +7,7 @@ Instalação da ferramenta Tcpreplay com o framework netmap para replicar arquiv
 [Tcpreplay FAQ](https://tcpreplay.appneta.com/wiki/faq.html)  
 [How can I make tcpreplay run even faster?](https://tcpreplay.appneta.com/wiki/faq.html#how-can-i-make-tcpreplay-run-even-faster)
 
-:warning: Tcpreplay FAQ:
+:warning: Tcpreplay performance FAQ:
 > - Since tcpreplay is not multi-threaded, SMP or dual-core processors won’t help very much. However, other processes can run on the other CPU(s).
 > - Turn off hyperthreading (HT) if your CPU supports it.
 
