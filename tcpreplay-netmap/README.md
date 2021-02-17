@@ -183,12 +183,6 @@ e1000                 151552  0
 netmap                204800  1 e1000
 ```
 
-:warning: Ajustar o tamanho do Buffer do netmap de acordo com o MTU.
-No caso abaixo, o buffer foi ajustado para Jumbo Frames.
-```bash
-echo 9000 > /sys/module/netmap/parameters/buf_size
-```
-
 Para retornar ao driver original:
 ```bash
 rmmod e1000
@@ -208,3 +202,11 @@ ip link set dev <interface> mtu 9000
 # OU
 # ifconfig <interface> mtu 9000
 ```
+
+:warning: Caso utilize o netmap, ajustar o tamanho do Buffer do módulo netmap de acordo com o MTU.
+No caso abaixo, o buffer foi ajustado para Jumbo Frames.
+```bash
+echo 9000 > /sys/module/netmap/parameters/buf_size
+```
+
+
