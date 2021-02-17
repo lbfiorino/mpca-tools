@@ -147,6 +147,15 @@ cd tcpreplay-4.3.3
 make
 make install 
 ```
+:warning:
+Caso a ferramenta `fragroute` tenha sido instalada, é preciso colocar o diretório `/usr/local/lib` no LD_LIBRARY_PATH.
+```bash
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+```
+Para persistir o LD_LIBRARY_PATH, colocar a linha abaixo no arquivo `/etc/environment`.
+```
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+```
 
 ### 5. Carregar os módulos para utilizar a ferramenta
 
