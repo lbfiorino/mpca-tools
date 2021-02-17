@@ -18,7 +18,7 @@ O pacote utilizado foi do Kali Linux Rolling `fragroute_1.2-8kali1_amd64.deb`.
 
 :warning: Nota Ubuntu 20.04:
 > No Ubuntu 20.04 instalar `libevent-2.1-7` e utilizar o pacote [`fragroute_1.2-8Ubuntu20.04_amd64.deb`](fragroute_1.2-8Ubuntu20.04_amd64.deb).  
-> As dependências do pacote `fragroute_1.2-8kali1_amd64.deb` foram retiradas para instalar no Ubuntu 20.04.
+> O pacote para o Ubuntu 20.04 foi gerado a partir do pacote do Kali Linux, retirando suas dependências.
 
 ### Requisitos
 - Debian 10
