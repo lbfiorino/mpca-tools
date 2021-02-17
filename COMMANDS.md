@@ -66,7 +66,7 @@ ip_frag 512
 ```
 Utilizar a ferramenta `tcprewrite` para fragmentar.
 ```bash
-tcprewrite --fragroute=frag.cfg -i <PCAP-FILE> -o <PCAP-FRAGMENTED>
+tcprewrite --fragroute=frag.cfg -i <PCAP_FILE> -o <PCAP-FRAGMENTED>
 ```
 
 ### Pktgen-DPDK
