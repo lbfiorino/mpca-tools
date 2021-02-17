@@ -50,6 +50,18 @@ As casas decimais no parâmetro `--multiplier` interferem no desempenho.
 tcpreplay --intf1=veth0 --multiplier=1.000000 --preload-pcap <PCAP_FILE>
 ```
 
+#### Fragmentar pacotes do PCAP (necesário tcpreplay com suporte a fragroute)
+**Ex:** Fragmentar pacotes com IP Data 512 bytes.  
+
+Criar arquivo `frag.cfg` com o seguinte conteúdo:
+```
+ip_frag 512
+```
+Utilizar a ferramenta `tcprewrite` para fragmentar.
+```bash
+
+```
+
 ### Pktgen-DPDK
 ```
 ##### A more typical commandline to start pktgen #####
