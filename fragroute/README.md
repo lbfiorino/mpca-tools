@@ -30,6 +30,9 @@ O pacote utilizado foi do Kali Linux Rolling (Debian 10) `fragroute_1.2-8kali1_a
 
 ```bash
 apt install build-essential libc6 libdumbnet1 libevent-2.1-6 libpcap0.8
+
+# On Ubuntu 20.04
+# apt install build-essential libc6 libdumbnet1 libevent-2.1-7 libpcap0.8
 ```
 ### Instalar libdnet
 ```bash
@@ -46,6 +49,10 @@ make install
 ```
 wget http://old.kali.org/kali/pool/main/f/fragroute/fragroute_1.2-8kali1_amd64.deb
 dpkg -i fragroute_1.2-8kali1_amd64.deb
+
+# On Ubuntu 20.04
+# wget https://raw.githubusercontent.com/lbfiorino/pcap-replay-tools/main/fragroute/fragroute_1.2-8ubuntu20.04_amd64.deb
+# dpkg -i fragroute_1.2-8ubuntu20.04_amd64.deb
 ```
 
 Verificar se encontrou todas as libs:
