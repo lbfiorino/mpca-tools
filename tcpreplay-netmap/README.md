@@ -35,7 +35,10 @@ Instalação da ferramenta Tcpreplay com o framework netmap para replicar arquiv
     - CentOS 7: `yum group install "Development Tools"`
 
 - Autogen:
-    - - Debian-based: `apt install autogen`  
+    - Debian-based: `apt install autogen`  
+
+- Tcpdump:
+    - - Debian-based: `apt install tcpdump` 
 
 - Git
     - Debian-based: `apt install git`  
