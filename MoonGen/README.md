@@ -24,7 +24,7 @@ apt-get install -y build-essential cmake linux-headers-`uname -r` pciutils libnu
 
 ## Instalação MoonGen
 :warning: Nota:
-> Utilizada a branch master.
+> Utilizada a branch master com dpdk 17.08 incluso.
 ```bash
 cd /root
 git clone https://github.com/emmericp/MoonGen
