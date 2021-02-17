@@ -14,7 +14,7 @@ tar xvzf control.tar.gz
 rm control.tar.gz
 
 # Create new control.tar.gz
-tar cvzf control.tar.gz conffiles control md5sums postinst
+tar cvzf control.tar.gz conffiles control md5sums postinst <other-files-in-control>
 
 # Create new .deb package
 ar rcs new_package.deb debian-binary control.tar.gz data.tar.gz
