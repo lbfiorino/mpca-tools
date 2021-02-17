@@ -1,6 +1,6 @@
 # MoonGen
 ```diff
-- EM CONSTRUÇÃO9
+- EM CONSTRUÇÃO
 
 - Verificar MTU
 - Aplicar Patch device.c na branch master e recompilar para habilitar jumbo frame
