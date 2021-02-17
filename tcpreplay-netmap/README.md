@@ -127,11 +127,7 @@ cd /root/netmap/LINUX
 make 
 # make install (Não foi executado. Para o carregamento do módulo ser manual)
 ```
-:warning: Ajustar o tamanho do Buffer do netmap de acordo com o MTU.
-No caso abaixo, o buffer foi ajustado para Jumbo Frames.
-```bash
-echo 9000 > /sys/module/netmap/parameters/buf_size
-```
+
 ### 5. Instalar o Tcpreplay
 
 [Wiki Tcpreplay](https://tcpreplay.appneta.com/wiki/installation.html)
@@ -185,6 +181,12 @@ lsmod
 Module                  Size  Used by
 e1000                 151552  0
 netmap                204800  1 e1000
+```
+
+:warning: Ajustar o tamanho do Buffer do netmap de acordo com o MTU.
+No caso abaixo, o buffer foi ajustado para Jumbo Frames.
+```bash
+echo 9000 > /sys/module/netmap/parameters/buf_size
 ```
 
 Para retornar ao driver original:
