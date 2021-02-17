@@ -14,7 +14,7 @@ Para a instalação, foi utilizado um pacote já compilado do Kali Linux.
 
 ## Instalação no Debian 10
 
-O pacote utilizado foi do Kali Linux Rolling `fragroute_1.2-8kali1_amd64.deb`.
+O pacote utilizado foi do Kali Linux Rolling (Debian 10) `fragroute_1.2-8kali1_amd64.deb`.
 
 :warning: Nota Ubuntu 20.04:
 > No Ubuntu 20.04 instalar `libevent-2.1-7` e utilizar o pacote [`fragroute_1.2-8Ubuntu20.04_amd64.deb`](fragroute_1.2-8Ubuntu20.04_amd64.deb).  
