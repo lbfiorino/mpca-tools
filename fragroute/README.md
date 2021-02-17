@@ -45,8 +45,8 @@ make
 make install
 ```
 
-### Instalar fragroute_1.2-8kali1_amd64.deb
-```
+### Instalar fragroute
+```bash
 wget http://old.kali.org/kali/pool/main/f/fragroute/fragroute_1.2-8kali1_amd64.deb
 dpkg -i fragroute_1.2-8kali1_amd64.deb
 
