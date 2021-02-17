@@ -126,6 +126,10 @@ tar xvf pktgen-dpdk-pktgen-21.02.0.tar.xz
 cd pktgen-dpdk-pktgen-21.02.0
 make -j
 ```
+Para facilitar a execução, criar o link simbólico abaixo.
+```bash
+ln -s root/pktgen-dpdk-pktgen-21.02.0/usr/local/bin/pktgen /usr/local/bin/pktgen-dpdk
+```
 
 ## Configurar interface de rede para DPDK (Dev Bind)
 
