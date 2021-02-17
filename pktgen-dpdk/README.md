@@ -171,14 +171,30 @@ reboot
 ln -s /usr/bin/python3 /usr/bin/python
 ```
 
-Fazer o bind da interface de rede.
+Fazer o bind da interface de rede:
 ```bash
+# Shutdown the interface
+ifconfig ens4 down
+# OR
+ip link set dev ens4 down
+
 # Listar as portas 
 dpdk-devbind.py --status
 
-# Bind Port
+# Bind Port with DPDK-compatible driver
 # Porta diferente da LAN para não perder conexão
-dpdk-devbind.py -b vfio-pci 0000:00:07.0
+dpdk-devbind.py -b vfio-pci 0000:00:04.0
+```
+
+Para voltar ao normal:
+```bash
+# Bind with SO driver
+dpdk-devbind.py -b virtio-pci 0000:00:04.0
+
+# Activate de interface
+ifconfig ens4 up
+# OR
+ip link set dev ens4 up
 ```
 
 ## Replay PCAP
