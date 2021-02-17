@@ -122,7 +122,7 @@ cd /root/netmap/LINUX
 # para não precisar baixar os demais drivers e compilar (método 1 da documentação).
 ./configure --kernel-sources=/lib/modules/linux-5.4.0 --no-ext-drivers
 make 
-make install
+# make install (Não foi executado. Para o carregamento do módulo ser manual)
 ```
 :warning: Ajustar o tamanho do Buffer do netmap de acordo com o MTU.
 No caso abaixo, o buffer foi ajustado para Jumbo Frames.
