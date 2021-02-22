@@ -1,6 +1,7 @@
 ## Comandos
 [Linux](#linux)  
-[Wireshark](#wireshark)  
+[Wireshark](#wireshark)
+[Tcpdump](#tcpdump)
 [Tcpreplay](#tcpreplay)  
 [Pktgen-DPDK](#pktgen-dpdk)  
 [MoonGen](#moongen)  
@@ -52,7 +53,15 @@ tshark -r <pcap-file> -Y "frame.len>=1514"
 # IP length
 tshark -r <pcap-file> -Y "ip.len>=1500"
 ```
-
+### Tcpdump
+#### Captutar os pacotes e salvar no arquivo pcap tão logo que eles chegam (timestamp real)
+```bash
+PARMS:
+-i : Network interface
+-w : PCAP file to save packets
+-U : Write packet to file before output buffer fills
+tcpdum -i <IFACE> -w <PCAP_FILE> -U
+```
 ### Tcpreplay
 #### Replay preservando o timestamp e com cache em memória do PCAP
 Para melhor desempenho colocar o arquivo PCAP em um diretório TMPFS.  
