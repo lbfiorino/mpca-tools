@@ -54,6 +54,10 @@ apt install build-essential cmake pkg-config libpcap-dev ninja-build libnuma-dev
 ```bash
 dnf group install "Development Tools"
 dnf install kernel-devel autogen cmake pkgconf-pkg-config libpcap-devel meson ninja-build numactl-devel
+
+# Dependências do pacote dpdk do repositório CentOS
+dnf install ibacm infiniband-diags libibumad libibverbs libmnl-devel librdmacm pciutils rdma-core rdma-core-devel
+
 python3 -m pip install pyelftools sphinx
 ```
 
