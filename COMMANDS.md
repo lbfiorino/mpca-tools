@@ -60,7 +60,7 @@ tshark -r <pcap-file> -Y "ip.len>=1500"
 # -i : Network interface
 # -w : PCAP file to save packets
 # -U : Write packet to file before output buffer fills
-tcpdum -i <IFACE> -w <PCAP_FILE> -U
+tcpdump -i <IFACE> -w <PCAP_FILE> -U
 ```
 ### Tcpreplay
 #### Replay preservando o timestamp e com cache em memória do PCAP
