@@ -13,8 +13,7 @@
 ```bash
 ip link add veth0 type veth peer name veth1
 ```
-Show PCI address of an NIC
-####
+#### Show PCI address of an NIC
 ```bash
 lshw -c network -businfo
 ```
