@@ -50,6 +50,14 @@ python3 -m pip install pyelftools sphinx
 apt install build-essential cmake pkg-config libpcap-dev ninja-build libnuma-dev linux-headers-`uname -r`
 ```
 
+### Instalar requisitos no CentOS 8
+```bash
+dnf group install "Development Tools"
+dnf install kernel-devel autogen cmake pkgconf-pkg-config libpcap-devel meson ninja-build numactl-devel
+python3 -m pip install pyelftools sphinx
+```
+
+
 ## Configurar Huge pages  
 [Documentação](https://doc.dpdk.org/guides/linux_gsg/sys_reqs.html#use-of-hugepages-in-the-linux-environment)
 
