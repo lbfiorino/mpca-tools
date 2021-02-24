@@ -19,6 +19,7 @@ lshw -c network -businfo
 ```
 
 ### Wireshark
+[editcap](https://www.wireshark.org/docs/man-pages/editcap.html)  
 #### Extrai pacotes do PCAP no intervalo de tempo
 ```bash
 editcap -F pcap -A "2018-12-01 13:29:00" -B "2018-12-01 13:34:00" <PCAP_INFILE> <PCAP_OUTFILE>
