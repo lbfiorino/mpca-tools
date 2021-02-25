@@ -20,6 +20,7 @@ lshw -c network -businfo
 
 ### Wireshark
 [Man pages](https://www.wireshark.org/docs/man-pages/)  
+[Display Filter Reference](https://osqa-ask.wireshark.org/questions/41152/how-to-check-if-fragmentation-is-happeningfith)  
 [editcap examples](https://www.wireshark.org/docs/man-pages/editcap.html#EXAMPLES)  
 #### Extrai pacotes do PCAP no intervalo de tempo
 ```bash
