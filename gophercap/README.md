@@ -72,7 +72,7 @@ gopherCap map --dir-src /mnt/pcap --file-suffix "pcap" --dump-json /mnt/pcap/met
 # e.g. 
 # --file-regexp ".test." (todos os arquivos com 'test' no nome)
 # --file-regexp "test\.pcap" (apenas o arquivo test.pcap)
-gopherCap map --dir-src /mnt/pcap --file-regex "test\.pcap" --dump-json /mnt/pcap/teste.meta.json
+gopherCap map --dir-src /mnt/pcap --file-regexp "test\.pcap" --dump-json /mnt/pcap/teste.meta.json
 
 ```
 
