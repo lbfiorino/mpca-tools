@@ -15,12 +15,15 @@ A instalação foi realizada com o usuário `root`.
 - gcc 
     - Debian-based: `apt install build-essential` 
 
+- jq
+    - Debian-based: `apt install jq` 
+
 ## Instalação no Ubuntu 20.04
 
-### 1. Libpcap, Git
+### 1. Requisitos (libpcap, git, jq)
 ```
 apt update
-apt install libpcap-dev libpcap0.8 git
+apt install libpcap-dev libpcap0.8 git jq
 ```
 
 ### 2. Linguagem Go
@@ -44,7 +47,7 @@ go version
 ```
 
 ### 3. GopherCap
-
+#### Build from sources
 ```bash
 cd /root
 git clone https://github.com/StamusNetworks/gophercap.git
@@ -61,6 +64,22 @@ go build -o ./gopherCap ./
 go install
 export PATH=$PATH:/root/go/bin/
 ```
+#### Download binary
+```bash
+apt install jq
+
+GOPHER_URL=$(curl --silent "https://api.github.com/repos/StamusNetworks/gophercap/releases/latest" | jq -r '.assets[] | select(.name|startswith("gopherCap-ubuntu-2004-")) | .browser_download_url')
+
+wget $GOPHER_URL
+
+# gopherCap-ubuntu-2004-0.1.1.gz
+gunzip gopherCap-ubuntu-2004-<version>.gz
+chmod +x gopherCap-ubuntu-2004-<version>
+
+# Run
+# ./gopherCap-ubuntu-2004-<version>
+```
+
 
 ### Replay PCAP
 Mapear os metadados do arquivo pcap.
