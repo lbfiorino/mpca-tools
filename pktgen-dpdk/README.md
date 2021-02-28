@@ -91,7 +91,7 @@ reboot
 
 Para verificar a configuração.
 ```bash
-# Utiliátio hugeadm : lista os pontos de montagem hubetlbfs
+# Utilitário hugeadm : lista os pontos de montagem hubetlbfs
 apt install libhugetlbfs-bin
 ```
 ```
