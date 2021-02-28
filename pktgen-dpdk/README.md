@@ -68,7 +68,7 @@ python3 -m pip install pyelftools sphinx
 No arquivo `/etc/default/grub`, adicionar os parâmetros de hugepages no `GRUB_CMDLINE_LINUX` conforme abaixo.
 
 ```
-GRUB_CMDLINE_LINUX="default_hugepagesz=2048K hugepagesz=2048KG hugepages=256"
+GRUB_CMDLINE_LINUX="default_hugepagesz=2048K hugepagesz=2048K hugepages=256"
 ```
 
 Adicionar a linha abaixo no `/etc/fstab`.
