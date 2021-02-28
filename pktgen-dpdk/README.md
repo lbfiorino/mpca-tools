@@ -30,7 +30,7 @@ reboot
 ```
 ### Instalar requisitos no Ubuntu 20.04
 ```bash
-apt install build-essential cmake pkg-config libpcap-dev meson ninja-build libnuma-dev linux-headers-`uname -r`
+apt install build-essential cmake pkg-config libpcap-dev meson ninja-build libnuma-dev linux-headers-`uname -r` libhugetlbfs-bin
 apt install python3-pip
 python3 -m pip install pyelftools sphinx
 ```
@@ -88,6 +88,21 @@ Atualizar o GRUB e reiniciar.
 update-grub
 reboot
 ```
+
+Para verificar a configuração.
+```bash
+# Utiliátio hugeadm : lista os pontos de montagem hubetlbfs
+apt install libhugetlbfs-bin
+```
+```
+# Verificar o suporte a huge pages
+grep -i huge /boot/config-<KERNEL_VERSION>
+grep -i huge /proc/meminfo
+
+# Lista os pontos de montagem hugetlbfs
+hugeadm --list-all-mounts
+```
+
 
 ## Instalar DPDK
 **Versão:** 19.11 (Última versão no momento: 19.11.6)  
