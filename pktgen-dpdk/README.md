@@ -63,7 +63,8 @@ python3 -m pip install pyelftools sphinx
 
 
 ## Configurar Huge pages  
-[Documentação](https://doc.dpdk.org/guides/linux_gsg/sys_reqs.html#use-of-hugepages-in-the-linux-environment)
+[Documentação DPDK](https://doc.dpdk.org/guides/linux_gsg/sys_reqs.html#use-of-hugepages-in-the-linux-environment)  
+[Documentação pktgen](https://pktgen-dpdk.readthedocs.io/en/latest/getting_started.html)
 
 No arquivo `/etc/default/grub`, adicionar os parâmetros de hugepages no `GRUB_CMDLINE_LINUX` conforme abaixo.
 
