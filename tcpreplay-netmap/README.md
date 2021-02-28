@@ -19,7 +19,7 @@ Instalação da ferramenta Tcpreplay com o framework netmap para replicar arquiv
 ## Requisitos
 
 - Kernel headers (normalmente instalado por padrão)
-    - Debian-based: ``apt install linux-headers-`uname -r``  
+    - Debian-based: ``apt install linux-headers-<kernel-version>`  
     - CentOS 7: `yum install kernel-devel`
 
 - Kernel sources (necessário para os drivers e1000 e r8169.c)
