@@ -196,7 +196,7 @@ modprobe vfio enable_unsafe_noiommu_mode=1
 ### Persistir módulo no Ubuntu 20.04 (Kernel 5.4.0) com `buil-in module`:
 Adicionar o parâmetro `vfio.enable_unsafe_noiommu_mode=1` no `GRUB_CMDLINE_LINUX` dentro do arquivo `/etc/default/grub`.
 ```bash
-GRUB_CMDLINE_LINUX="default_hugepagesz=1G hugepagesz=1G hugepages=4 vfio.enable_unsafe_noiommu_mode=1"
+GRUB_CMDLINE_LINUX="vfio.enable_unsafe_noiommu_mode=1"
 ```
 Atualizar o GRUB e reiniciar.
 ```bash
