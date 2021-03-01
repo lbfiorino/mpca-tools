@@ -66,10 +66,21 @@ python3 -m pip install pyelftools sphinx
 [Documentação DPDK](https://doc.dpdk.org/guides/linux_gsg/sys_reqs.html#use-of-hugepages-in-the-linux-environment)  
 [Documentação pktgen](https://pktgen-dpdk.readthedocs.io/en/latest/getting_started.html)
 
-No arquivo `/etc/default/grub`, adicionar os parâmetros de hugepages no `GRUB_CMDLINE_LINUX` conforme abaixo.
+Adicionar no arquivo ` /etc/sysctl.conf` a linha abaixo.   
+:warning: Atenção nos cálculos para não consumir toda a memória.
+```bash
+vm.nr_hugepages=256
 
+## Pktgen Note:
+# You can configure the vm.nr_hugepages=256 as required.
+# In some cases making it too small will effect the performance of pktgen or cause it to terminate on startup.
 ```
-GRUB_CMDLINE_LINUX="default_hugepagesz=1G hugepagesz=1G hugepages=256"
+
+Para Huge Pages maiores, adicionar no arquivo `/etc/default/grub` os parâmetros de kernel para hugepages no `GRUB_CMDLINE_LINUX` conforme abaixo.
+```bash
+# Para Huge Pages maiores
+# Ex: 4 pages de 1G = 4GB
+GRUB_CMDLINE_LINUX="default_hugepagesz=1G hugepagesz=1G hugepages=4"
 ```
 
 Adicionar a linha abaixo no `/etc/fstab`.
