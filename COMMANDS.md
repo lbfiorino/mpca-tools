@@ -55,7 +55,7 @@ tshark -r <pcap-file> -Y "frame.len>=1514"
 # IP length
 tshark -r <pcap-file> -Y "ip.len>=1500"
 ```
-#### Escape character "
+#### Caracter " no filtro (-Y) do tshark
 ```
 # BAT
 tshark -r botnet.pcapng -Y "frame.time>=""2016-04-01 09:24:00.3380000"" and frame.time<=""2016-04-01 09:24:10.1340000"""
@@ -64,7 +64,7 @@ tshark -r botnet.pcapng -Y "frame.time>=""2016-04-01 09:24:00.3380000"" and fram
 tshark -r botnet.pcapng -Y 'frame.time>=""2016-04-01 09:24:00.3380000"" and frame.time<=""2016-04-01 09:24:10.1340000""'
 
 # Bash
-
+tshark -r botnet.pcapng -Y 'frame.time>="2016-04-01 06:24:00.3380000" and frame.time<="2016-04-01 06:24:10.1340000"'
 
 ```
 
