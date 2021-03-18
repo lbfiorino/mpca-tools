@@ -55,6 +55,19 @@ tshark -r <pcap-file> -Y "frame.len>=1514"
 # IP length
 tshark -r <pcap-file> -Y "ip.len>=1500"
 ```
+#### Escape character "
+```
+# BAT
+tshark -r botnet.pcapng -Y "frame.time>=""2016-04-01 09:24:00.3380000"" and frame.time<=""2016-04-01 09:24:10.1340000"""
+
+# PowerShell
+tshark -r botnet.pcapng -Y 'frame.time>=""2016-04-01 09:24:00.3380000"" and frame.time<=""2016-04-01 09:24:10.1340000""'
+
+# Bash
+
+
+```
+
 ### Tcpdump
 #### Captutar os pacotes e salvar no arquivo pcap tão logo que eles chegam (timestamp real)
 ```bash
