@@ -22,6 +22,11 @@ https://github.com/emmericp/MoonGen/
 https://github.com/FraudBuster/dpdk-burst-replay  
 http://core.dpdk.org/  
 
+**TCPDUMP TIMESTAMPS PCAP**
+Packet time stamps in libpcap
+http://www.tcpdump.org/manpages/pcap-tstamp.7.html
+
+
 **Arquivo** [`COMMANDS.md`](COMMANDS.md)  
 Arquivo contendo comandos para utilização das ferramentas.
 
