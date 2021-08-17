@@ -16,3 +16,5 @@ make
 make install
 ```
 
+## Utilização
+
