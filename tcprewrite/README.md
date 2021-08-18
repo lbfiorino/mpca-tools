@@ -5,9 +5,9 @@ Author: Niranjan Nagaraju
 # tcprewrite
 ### Rewrite IP/Mac addresses, -C optionally to fix checksums
 1. tcpprep, first:C2S, Second S2C, Generate cache file
-```bash
-tcpprep --auto=first --pcap=icmp.pcap --cachefile=icmp_in.cache
-```
+  ```bash
+  tcpprep --auto=first --pcap=icmp.pcap --cachefile=icmp_in.cache
+  ```
 2. Rewrite end points to 172.16.0.1/172.16.0.2 [ping 2->1, reply, 1->2]
 ```bash
 tcprewrite --endpoints=172.16.0.1:172.16.0.2 -i out.pcap -o out2.pcap --cachefile=icmp_in.cache
