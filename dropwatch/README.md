@@ -23,6 +23,8 @@ make install
 
 ## Utilização
 
+dropwatch [-l method | list]
+
 ```bash
 # Lista 
 dropwatch -l list
