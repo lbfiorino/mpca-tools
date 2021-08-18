@@ -10,7 +10,8 @@ apt install binutils
 
 ## Requisitos
 Debug Symbol Packages  
-https://wiki.ubuntu.com/Debug%20Symbol%20Packages
+https://wiki.ubuntu.com/Debug%20Symbol%20Packages  
+https://newbedev.com/where-is-vmlinux-on-my-ubuntu-installation
 
 ```bash
 echo "deb http://ddebs.ubuntu.com $(lsb_release -cs) main restricted universe multiverse
