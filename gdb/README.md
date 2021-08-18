@@ -2,8 +2,8 @@
 
 Kernel stack trace to source code lines.  
 With gdb, you can also use this command to find the line number quickly:  
-Source: https://serverfault.com/questions/605946/kernel-stack-trace-to-source-code-lines  
-`(gdb) list *(some_function+0x12c)` 
+`(gdb) list *(some_function+0x12c)`  
+Source: https://serverfault.com/questions/605946/kernel-stack-trace-to-source-code-lines
 
 # Instalar gdb
 ```bash
