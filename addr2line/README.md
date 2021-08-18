@@ -1,6 +1,8 @@
 # addr2line tool
 
-**addr2line** - convert addresses into file names and line numbers
+**addr2line** - convert addresses into file names and line numbers  
+https://news.ycombinator.com/item?id=23238104  
+https://serverfault.com/questions/605946/kernel-stack-trace-to-source-code-lines
 
 ```bash
 apt install binutils
@@ -29,4 +31,11 @@ apt-get install linux-image-$(uname -r)-dbgsym
 Local do `vmlinux` para debug:
 ```bash
 /usr/lib/debug/boot/vmlinux-$(uname -r)
+```
+
+## Utilização
+
+```bash
+$ addr2line -e /tmp/vmlinux ffffffff811a8c50
+/tmp/linux-3.15-rc8/fs/select.c:209
 ```
