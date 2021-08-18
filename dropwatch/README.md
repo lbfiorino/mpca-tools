@@ -32,10 +32,13 @@ dropwatch -l list
 #   Available lookup methods:
 #   kas - use /proc/kallsyms
 
-
 # Abre dropwatch shell
 dropwatch -l kas
 
 # Inicia dropwatch
 dropwatch> start
+
+# Stop
+Issue Ctrl-C to stop monitoring
+dropwatch> exit
 ```
