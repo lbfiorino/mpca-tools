@@ -28,6 +28,10 @@ make install
 
 # Lista os métodos disponíveis
 dropwatch -l list
+# Output:
+#   Available lookup methods:
+#   kas - use /proc/kallsyms
+
 
 # Abre dropwatch shell
 dropwatch -l kas
