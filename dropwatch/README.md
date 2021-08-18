@@ -23,10 +23,10 @@ make install
 
 ## Utilização
 
-dropwatch [-l method | list]
-
 ```bash
-# Lista 
+# SYNOPSIS: dropwatch [-l method | list]
+
+# Lista os métodos disponíveis
 dropwatch -l list
 
 # Abre dropwatch shell
