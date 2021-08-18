@@ -5,7 +5,8 @@ https://github.com/nhorman/dropwatch
 
 ## Requisitos Ubuntu 20.04
 ```bash
-apt install build-essential autogen automake libtool pkg-config libpcap-dev libreadline-dev binutils-dev libnl-3-dev libnl-genl-3-dev
+apt install build-essential autogen automake libtool pkg-config libpcap-dev \
+            libreadline-dev binutils-dev libnl-3-dev libnl-genl-3-dev
 ```
 
 ## Instalação
