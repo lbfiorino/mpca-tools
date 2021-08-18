@@ -1,5 +1,5 @@
 # TCPReplay/TCPRewrite/TCPPrep/TCPDump Cheatsheet
-Source:https://gist.github.com/niranjan-nagaraju/4532037  
+Source: https://gist.github.com/niranjan-nagaraju/4532037  
 Author: Niranjan Nagaraju
 
 # tcprewrite
