@@ -31,6 +31,6 @@ tcprewrite --enet-dmac=00:01:02:03:04:05 --enet-smac=06:07:08:09:10:11 --infile=
 tcpdump -r file.pcap
 ```
 ### Listen to an interface (-e display ethernet, -nn dont resolve hosts, -i interface, -vvv:verbose, -w write to a file)
-``
+```
 tcpdump -e -nn -vvv -i eth0 -w outfile.pcap
 ```
