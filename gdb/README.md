@@ -21,8 +21,8 @@ deb http://ddebs.ubuntu.com $(lsb_release -cs)-updates main restricted universe 
 deb http://ddebs.ubuntu.com $(lsb_release -cs)-proposed main restricted universe multiverse" | \
 sudo tee /etc/apt/sources.list.d/ddebs.list
 
-apt update
 apt install ubuntu-dbgsym-keyring
+apt update
 ```
 
 ### Instalar kernel debug symbols
