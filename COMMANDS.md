@@ -102,7 +102,7 @@ tcprewrite --fragroute=frag.cfg -i <PCAP_FILE> -o <PCAP-FRAGMENTED>
 
 ### Tcprewrite
 
-#### Recalculated and fix IPv4/TCP/UDP header checksums
+#### Recalculate and fix IPv4/TCP/UDP header checksums
 ```
 tcprewrite -C -i <PCAP_IN_FILE> -o <PCAP_OUT_FILE>
 ```
