@@ -3,6 +3,7 @@
 [Wireshark](#wireshark)  
 [Tcpdump](#tcpdump)  
 [Tcpreplay](#tcpreplay)  
+[Tcprewrite](#tcprewrite)  
 [Pktgen-DPDK](#pktgen-dpdk)  
 [MoonGen](#moongen)  
 
@@ -77,6 +78,7 @@ tshark -r botnet.pcapng -Y 'frame.time>="2016-04-01 06:24:00.3380000" and frame.
 # -U : Write packet to file before output buffer fills
 tcpdump -i <IFACE> -w <PCAP_FILE> -U
 ```
+
 ### Tcpreplay
 #### Replay preservando o timestamp e com cache em memória do PCAP
 Para melhor desempenho colocar o arquivo PCAP em um diretório TMPFS.  
@@ -97,6 +99,14 @@ Utilizar a ferramenta `tcprewrite` para fragmentar.
 ```bash
 tcprewrite --fragroute=frag.cfg -i <PCAP_FILE> -o <PCAP-FRAGMENTED>
 ```
+
+### Tcprewrite
+
+#### Fix checksum IPv4/TCP/UDP
+```
+tcprewrite -C -i <PCAP_IN_FILE> -o <PCAP_OUT_FILE>
+```
+
 
 ### Pktgen-DPDK
 ```
