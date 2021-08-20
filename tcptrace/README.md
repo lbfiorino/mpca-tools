@@ -1,6 +1,6 @@
 # tcptrace
 
-Tcptrace is a tool for analysis of TCP dump files.
+Tcptrace is a tool for analysis of TCP dump files.  
 http://tcptrace.org/
 
 ### Install
