@@ -15,7 +15,8 @@ A versão 1.3.2 apresentou problemas. Utilizada a versão 1.2.0.
 ./gor1.2.0 -verbose 10 -input-raw testbed-14jun.pcap:80 -input-raw-engine pcap_file -output-file ./testbed-14jun.gor
 ```
 
-Há opções para gerar um único arquivo. Porém apresentou problemas.
+Há opções para gerar um único arquivo. Porém apresentou problemas.  
+`-output-file-queue-limit 0` Não limita o tamanho da fila no arquivo, gerando um único arquivo.
 ```
 
   -output-file value
