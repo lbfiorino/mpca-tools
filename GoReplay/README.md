@@ -8,7 +8,7 @@ GoReplay is an open-source network monitoring tool which can record your live tr
 ```
   
 ### Extrat requests from pcap to file
-Cria arquivos *.gor com as requisiçoes.  
+Cria arquivos \*.gor com as requisições.  
 ./gor1.2.0 -verbose 10 -input-raw testbed-14jun.pcap:80 -input-raw-engine pcap_file -output-file ./testbed-14jun.gor
 
 ### Replaying from multiple requests files (*.gor)
