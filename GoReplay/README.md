@@ -3,6 +3,7 @@ https://github.com/buger/goreplay
 GoReplay is an open-source network monitoring tool which can record your live traffic, and use it for shadowing, load testing, monitoring and detailed analysis.
 
 ### Replaying from pcap
+Não respeitou os intervalos entre as requisições. Fez em rajada.
 ```
 ./gor --input-raw ./file.pcap:80 --input-raw-engine pcap_file --output-http http://<host>
 ```
