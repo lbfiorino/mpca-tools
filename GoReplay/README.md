@@ -9,7 +9,8 @@ Não respeitou os intervalos entre as requisições. Fez em rajada.
 ```
   
 ### Extract requests from pcap to file
-Cria arquivos \*.gor com as requisições.
+Cria arquivos \*.gor com as requisições.  
+A versão 1.3.2 apresentou problemas. Utilizada a versão 1.2.0.
 ```
 ./gor1.2.0 -verbose 10 -input-raw testbed-14jun.pcap:80 -input-raw-engine pcap_file -output-file ./testbed-14jun.gor
 ```
