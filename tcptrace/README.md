@@ -29,9 +29,9 @@ Connection: Keep-Alive
 ```
 
 
-### Resending captured requests
+### Resending captured requests to HTTP server using Netcat
 
 ```
-cat tcprequests/w2x_contents.dat | nc localhost 8080
+cat tcprequests/a2b_contents.dat | nc <HTTP_SERVER> 80
 ```
 
