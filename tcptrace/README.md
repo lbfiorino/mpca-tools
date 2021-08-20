@@ -1,6 +1,13 @@
 # tcptrace
 
 Tcptrace is a tool for analysis of TCP dump files.
+http://tcptrace.org/
+
+### Install
+
+```
+apt install tcptrace
+```
 
 ### Extract HTTP requests from pcap
 ```
