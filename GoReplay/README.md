@@ -15,6 +15,28 @@ A versão 1.3.2 apresentou problemas. Utilizada a versão 1.2.0.
 ./gor1.2.0 -verbose 10 -input-raw testbed-14jun.pcap:80 -input-raw-engine pcap_file -output-file ./testbed-14jun.gor
 ```
 
+Há opções para gerar um único arquivo. Porém apresentou problemas.
+```
+
+  -output-file value
+        Write incoming requests to file:
+                gor --input-raw :80 --output-file ./requests.gor
+  -output-file-append
+        The flushed chunk is appended to existence file or not.
+  -output-file-buffer string
+        The path for temporary storing current buffer:
+                gor --input-raw :80 --output-file s3://mybucket/logs/%Y-%m-%d.gz --output-file-buffer /mnt/logs (default "/tmp")
+  -output-file-flush-interval duration
+        Interval for forcing buffer flush to the file, default: 1s. (default 1s)
+  -output-file-max-size-limit value
+        Max size of output file, Default: 1TB
+  -output-file-queue-limit int
+        The length of the chunk queue. Default: 256 (default 256)
+  -output-file-size-limit value
+        Size of each chunk. Default: 32mb
+
+```
+
 ### Replaying from multiple requests files (*.gor)
 
 `--input-file` accepts file pattern, for example: `--input-file logs-2016-05-*`: it will replay all the files, sorting them in lexicographical order.
