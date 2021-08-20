@@ -15,8 +15,10 @@ tcptrace --output_dir="tcprequests/" -l -e file.pcap
 ```
 $ ls tcprequests/
 a2b_contents.dat  c2d_contents.dat  e2f_contents.dat  g2h_contents.dat  i2j_contents.dat  k2l_contents.dat
+```
 
-$cat tcprequests/a2b_contents.dat
+```
+$ cat tcprequests/a2b_contents.dat
 GET /DVWA HTTP/1.1
 Accept: application/x-ms-application, image/jpeg, application/xaml+xml, image/gif, image/pjpeg, application/x-ms-xbap, */*
 Accept-Language: en-US
