@@ -4,6 +4,8 @@
 https://news.ycombinator.com/item?id=23238104  
 https://serverfault.com/questions/605946/kernel-stack-trace-to-source-code-lines
 
+O código precisa ser compilado com a opção `debug`.
+
 ```bash
 apt install binutils
 ```
@@ -35,7 +37,7 @@ Local do `vmlinux` para debug:
 ```
 
 ## Utilização
-Verificar a linha de código no endereço `0xffffffff811a8c50`.
+Verificar a linha de código no endereço `0xffffffff811a8c50` do executável.
 ```bash
 $ addr2line -e /tmp/vmlinux ffffffff811a8c50
 /tmp/linux-3.15-rc8/fs/select.c:209
