@@ -38,7 +38,7 @@ Local do `vmlinux` para debug:
 
 ## Utilização
 
-Exemplo: dropwatch mostrando pacote sendo descartado em **drops at tcp_v4_rcv+4b (0xffffffff9358db8b)**
+Exemplo: _dropwatch_ mostrando pacote sendo descartado em **drops at tcp_v4_rcv+4b (0xffffffff9358db8b)**
 
 **tcp_v4_rcv+4b**: This is a standard notation. tcp_v4_rcv+48 means, within the binary kernel image, 0x48 bytes after the start of the tcp_v4_rcv function. <https://serverfault.com/questions/605946>
 
