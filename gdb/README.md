@@ -5,6 +5,8 @@ With gdb, you can also use this command to find the line number quickly:
 Ex: `(gdb) list *(some_function+0x12c)`  
 Source: https://serverfault.com/questions/605946/kernel-stack-trace-to-source-code-lines
 
+O código precisa ser compilado com suporte a `debug`.
+
 # Instalar gdb
 ```bash
 apt install gdb
