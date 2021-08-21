@@ -4,7 +4,7 @@
 https://news.ycombinator.com/item?id=23238104  
 https://serverfault.com/questions/605946/kernel-stack-trace-to-source-code-lines
 
-O código precisa ser compilado com suporte a `debug`.
+O código que será debugado precisa estar compilado com suporte a `debug` para a ferramenta funcionar.
 
 ```bash
 apt install binutils
