@@ -100,7 +100,7 @@ Replay do pcap.
 gopherCap replay --out-interface veth0 --dump-json /mnt/pcap/meta.json
 ```
 
-A interface `veth0` utilizada acima é uma interface virtual criada da seguinte forma.
+A interface `veth0` utilizada acima é uma interface virtual criada conforme o código abaixo.  
 O pacotes enviados pela interface `veth0` são recebidos pela interface `veth1`.
 ```bash
 ip link add veth0 type veth peer name veth1
