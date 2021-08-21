@@ -35,7 +35,7 @@ Local do `vmlinux` para debug:
 ```
 
 ## Utilização
-Verificar a linha de código no endereço 0xffffffff811a8c50.
+Verificar a linha de código no endereço `0xffffffff811a8c50`.
 ```bash
 $ addr2line -e /tmp/vmlinux ffffffff811a8c50
 /tmp/linux-3.15-rc8/fs/select.c:209
