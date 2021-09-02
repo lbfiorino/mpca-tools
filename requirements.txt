@@ -8,7 +8,6 @@ matplotlib
 numpy
 pandas
 scipy
-sklearn
 scikit-learn
 scikit-image
 #tensorflow
