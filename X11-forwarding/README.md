@@ -1,4 +1,4 @@
-# MobaXterm X11-forwarding
+# MobaXterm - X11 Forwarding using SSH
 
 Source: https://blog.mobatek.net/post/how-to-keep-X11-display-after-su-or-sudo/  
 
