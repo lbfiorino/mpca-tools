@@ -13,7 +13,7 @@ sudo xauth add $(xauth -f ~john/.Xauthority list|tail -1)
 ```
 
 ### 2. Using `su`:
-On the root terminal:
+On the root terminal after `su` command:
 ```bash
 xauth add $(xauth -f ~john/.Xauthority list|tail -1)
 ```
