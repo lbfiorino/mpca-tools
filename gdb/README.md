@@ -13,7 +13,7 @@ apt install gdb
 ```
 
 ## Requisitos
-SO Utilizado: Ubuntu 20.04
+Sistema Operacional utilizado: **Ubuntu 20.04**
 ### APT Debug Symbol Packages  
 https://wiki.ubuntu.com/Debug%20Symbol%20Packages  
 https://newbedev.com/where-is-vmlinux-on-my-ubuntu-installation
