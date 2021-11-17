@@ -9,6 +9,7 @@ O código que será debugado precisa estar compilado com suporte a `debug` para 
 
 # Instalar gdb
 ```bash
+# Debian/Ubuntu
 apt install gdb
 ```
 
