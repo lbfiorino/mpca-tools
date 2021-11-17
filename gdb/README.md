@@ -12,7 +12,8 @@ O código que será debugado precisa estar compilado com suporte a `debug` para 
 apt install gdb
 ```
 
-## Requisitos Ubuntu 20.04
+## Requisitos
+SO Utilizado: Ubuntu 20.04
 ### APT Debug Symbol Packages  
 https://wiki.ubuntu.com/Debug%20Symbol%20Packages  
 https://newbedev.com/where-is-vmlinux-on-my-ubuntu-installation
