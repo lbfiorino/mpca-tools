@@ -1,5 +1,6 @@
 # SIEGE - A HTTP/FTP load tester and benchmarking utility
 https://www.joedog.org/  
+https://www.joedog.org/siege-faq/  
 https://github.com/JoeDog/siege  
 
 ## Requisitos Ubuntu 20.04
