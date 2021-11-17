@@ -6,7 +6,7 @@ Source: https://blog.mobatek.net/post/how-to-keep-X11-display-after-su-or-sudo/
 
 Error: ***MoTTY X11 proxy: Authorisation not recognised***
 
-Let's assume that you are connected to a remote server using SSH with username "john".
+Assuming that user "john" is connected to a remote server using SSH.
 
 ### 1. Using `sudo`:
 On the john's terminal:
