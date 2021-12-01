@@ -7,7 +7,7 @@ Source: https://tools.netsa.cert.org/yaf/index.html
 
 ```bash
 # Requirements
-apt install libglib2.0-dev libfixbuf-dev libpcap-dev libpcap0.8
+apt install libglib2.0-dev libfixbuf-dev libpcap-dev libpcap0.8 libndpi2.6 libndpi-dev
 
 # Version 2.12.2
 #https://tools.netsa.cert.org/yaf/download.html
