@@ -7,7 +7,7 @@ Source: https://tools.netsa.cert.org/yaf/index.html
 
 ```bash
 # Requirements
-apt install libglib2.0-dev libfixbuf-dev libpcap-dev libpcap0.8 libndpi2.6 libndpi-dev
+apt install libglib2.0-dev libfixbuf-dev libpcre3 libpcre3-dev libpcap-dev libpcap0.8 libndpi2.6 libndpi-dev
 
 # Version 2.12.2
 #https://tools.netsa.cert.org/yaf/download.html
@@ -15,12 +15,14 @@ wget https://tools.netsa.cert.org/releases/yaf-2.12.2.tar.gz
 tar xvzf yaf-2.12.2.tar.gz
 cd yaf-2.12.2
 
+# --enable-entropy        enable the packet payload entropy calculation [default=no].
+# --enable-ndpi           Enable NDPI application labeling
 # Support for application labeling requires giving the --enable-applabel option to ./configure.
 # Support for p0f requires giving the --enable-p0fprinter and --enable-applabel options to ./configure.
 # Deep Packet Inspection (DPI) requires plugin support. Use the --enable-plugins option to ./configure.
 
 # No p0f support
-./configure --enable-applabel --enable-plugins
+./configure --enable-applabel --enable-plugins --enable-ndpi --enable-entropy
 
 make
 make install
