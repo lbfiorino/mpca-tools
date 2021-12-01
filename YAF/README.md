@@ -26,5 +26,9 @@ cd yaf-2.12.2
 
 make
 make install
+
+# Create symbolic links
+ln -s /usr/local/lib/libyaf-2.12.2.so.4 /lib/x86_64-linux-gnu/libyaf-2.12.2.so.4
+ln -s /usr/local/lib/libairframe-2.12.2.so.4  /lib/x86_64-linux-gnu/libairframe-2.12.2.so.4
 ```
 
