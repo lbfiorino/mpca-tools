@@ -20,7 +20,7 @@ cd yaf-2.12.2
 # Deep Packet Inspection (DPI) requires plugin support. Use the --enable-plugins option to ./configure.
 
 # No p0f support
-./configure  --enable-applabel --enable-plugins
+./configure --enable-applabel --enable-plugins
 
 make
 make install
