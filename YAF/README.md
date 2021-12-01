@@ -18,7 +18,9 @@ cd yaf-2.12.2
 # Support for application labeling requires giving the --enable-applabel option to ./configure.
 # Support for p0f requires giving the --enable-p0fprinter and --enable-applabel options to ./configure.
 # Deep Packet Inspection (DPI) requires plugin support. Use the --enable-plugins option to ./configure.
-./configure  --enable-applabel --enable-p0fprinter --enable-plugins
+
+# No p0f support
+./configure  --enable-applabel --enable-plugins
 
 make
 make install
