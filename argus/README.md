@@ -35,6 +35,17 @@ argus -r packet.pcap -w packet.argus
 # Read argus file
 # Param -s : Specify  the  fields  to print.
 ra -r packet.argus -s +1dur
+
+# Example
+#       -n  Modify  number  to  name  converstion.   This flag supports 4 states, specified by the
+#           modulus of the number of -n flags  set.   By  default  ra*  programs  do  not  provide
+#           hostname  lookups,  but  they  do  lookup  port and protocol names.  The first -n will
+#           suppress port number to service conversion, -nn will suppress translation of  protocol
+#           numbers  to  names (no lookups).  -nnn will return you to full conversion, translating
+#           hostnames, port and protocol names, and -nnnn will return you to the default behavior.
+#           Because  this  indicator  can  be  set  in  the .rarc file, multiple -n flags progress
+#           through the cycle.
+ra -r teste.argus -n -s stime ltime dur flgs proto sport dport saddr daddr dco spkts dpkts pkts sbytes dbytes bytes
 ```
 
 ## Example
