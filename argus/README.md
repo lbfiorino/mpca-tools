@@ -34,6 +34,7 @@ argus -r packet.pcap -w packet.argus
 
 # Read argus file
 # Param -s : Specify  the  fields  to print.
+#            +1dur put duration field at #1 position. Starts with 0.  
 ra -r packet.argus -s +1dur
 
 # Example
