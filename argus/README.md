@@ -27,3 +27,6 @@ cd argus-clients-3.0.8.2
 make
 make install
 ```
+# Using Argus
+
+![Infraestrutura](imagens/infraestrutura.svg)
