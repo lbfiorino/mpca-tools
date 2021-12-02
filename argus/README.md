@@ -28,11 +28,13 @@ make
 make install
 ```
 # Using Argus
+ ```bash
+# Convert PCAP to argus
+argus -r packet.pcap -w packet.argus
 
-Convert PCAP to argus: `argus -r packet.pcap -w packet.argus`
+#Read argus file
+ra -r packet.argus
+```
 
-Read argus file: `ra -r packet.argus`
-
-
-### Example
+## Example
 ![Using-Argus](argus.packet.processing.png)
