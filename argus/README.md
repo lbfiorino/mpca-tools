@@ -29,6 +29,8 @@ make install
 ```
 # Using Argus
 
+Convert PCAP to argus: `argus -r packet.pcap -w packet.argus`
+
 Read argus file: `ra -r packet.argus`
 
 ![Using-Argus](argus.packet.processing.png)
