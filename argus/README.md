@@ -29,4 +29,6 @@ make install
 ```
 # Using Argus
 
+Read argus file: `ra -r packet.argus`
+
 ![Using-Argus](argus.packet.processing.png)
