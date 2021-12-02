@@ -47,7 +47,9 @@ ra -r packet.argus -s +1dur
 #           Because  this  indicator  can  be  set  in  the .rarc file, multiple -n flags progress
 #           through the cycle.
 #       -u  Write out time values using UTC time format. Epoch format.
-ra -r packet.argus -u -n -s stime ltime dur flgs proto sport dport saddr daddr dco spkts dpkts pkts sbytes dbytes bytes
+#       -c <char>
+#            Specify a delimiter character for output columns (default is ' ').
+ra -c , -r packet.argus -u -n -s stime ltime dur flgs proto sport dport saddr daddr dco spkts dpkts pkts sbytes dbytes bytes > flows-dataset.csv
 ```
 
 ## Example
