@@ -1,0 +1,16 @@
+# Argus
+Argus is a Real Time Flow Monitor that is designed to perform comprehensive data network traffic auditing.  
+https://openargus.org/
+
+# Install on Ubuntu 20.04
+
+```bash
+# Requirements
+apt install flex
+
+# Argus-3.0.8.2
+wget http://qosient.com/argus/src/argus-3.0.8.2.tar.gz
+wget http://qosient.com/argus/src/argus-clients-3.0.8.2.tar.gz
+
+
+```
