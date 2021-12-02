@@ -47,7 +47,7 @@ ra -r packet.argus -s +1dur
 #           Because  this  indicator  can  be  set  in  the .rarc file, multiple -n flags progress
 #           through the cycle.
 #       -u  Write out time values using UTC time format. Epoch format.
-ra -r teste.argus -n -s stime ltime dur flgs proto sport dport saddr daddr dco spkts dpkts pkts sbytes dbytes bytes
+ra -r teste.argus -u -n -s stime ltime dur flgs proto sport dport saddr daddr dco spkts dpkts pkts sbytes dbytes bytes
 ```
 
 ## Example
