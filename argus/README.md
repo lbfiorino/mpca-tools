@@ -32,8 +32,9 @@ make install
 # Convert PCAP to argus
 argus -r packet.pcap -w packet.argus
 
-#Read argus file
-ra -r packet.argus
+# Read argus file
+# Param -s : Specify  the  fields  to print.
+ra -r packet.argus -s +1dur
 ```
 
 ## Example
