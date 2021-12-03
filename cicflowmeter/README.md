@@ -18,7 +18,7 @@ cd ../../../
 gradle clean
 gradle build
 
-# The zip file will be in the pathtoproject/CICFlowMeter/build/distributions
+# The .tar and .zip files will be in the pathtoproject/CICFlowMeter/build/distributions
 ```
 
 # Using CICFlowMeter
