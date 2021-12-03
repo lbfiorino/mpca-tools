@@ -28,7 +28,7 @@ cd argus-clients-3.0.8.2
 # https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/flow-tools/flow-tools-0.68.5.1.tar.bz2
 # Install flow-tools and configure --with-libft
 # ./configure --with-libft=/path/to/my/flow-tools-directory
-./configure --with-libft=/usr/loca/flow-tools
+./configure --with-libft=/usr/local/flow-tools
 make
 make install
 ```
