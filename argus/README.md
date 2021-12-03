@@ -23,12 +23,7 @@ mane install
 
 cd ..
 cd argus-clients-3.0.8.2
-# To enable flow-tools:
-# https://code.google.com/archive/p/flow-tools/downloads
-# https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/flow-tools/flow-tools-0.68.5.1.tar.bz2
-# Install flow-tools and configure --with-libft
-# ./configure --with-libft=/path/to/my/flow-tools-directory
-./configure --with-libft=/usr/local/flow-tools
+./configure
 make
 make install
 ```
