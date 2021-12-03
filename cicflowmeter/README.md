@@ -23,8 +23,11 @@ gradle build
 
 # Using CICFlowMeter
 
+Unpack zip packet in CICFlowMeter/build/distributions.
 ```bash
-cd 
+cd CICFlowMeter-4.0/bin
+# cfm : command line
+# CICFlowMeter : graphical application
 /cfm file.pcap <outdir>
 # output file is file.pcap_Flow.csv
 ```
