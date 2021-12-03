@@ -23,7 +23,7 @@ gradle build
 
 # Using CICFlowMeter
 
-Unpack zip packet in CICFlowMeter/build/distributions.
+Unpack zip package in CICFlowMeter/build/distributions.
 ```bash
 cd CICFlowMeter-4.0/bin
 # cfm : command line
