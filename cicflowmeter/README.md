@@ -21,4 +21,10 @@ gradle build
 # The zip file will be in the pathtoproject/CICFlowMeter/build/distributions
 ```
 
-# Using
+# Using CICFlowMeter
+
+```bash
+cd 
+/cfm file.pcap <outdir>
+# out file is file.pcap_Flow.csv
+```
