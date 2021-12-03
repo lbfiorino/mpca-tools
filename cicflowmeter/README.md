@@ -26,5 +26,5 @@ gradle build
 ```bash
 cd 
 /cfm file.pcap <outdir>
-# out file is file.pcap_Flow.csv
+# output file is file.pcap_Flow.csv
 ```
