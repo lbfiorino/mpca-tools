@@ -15,7 +15,7 @@ export PATH=$PATH:/usr/local/go/bin
 go version
 ```
 
-Install go-flows
+Install go-flows.
 ```bash
 git clone https://github.com/CN-TU/go-flows.git
 go clean
