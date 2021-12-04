@@ -20,4 +20,5 @@ Install go-flows.
 git clone https://github.com/CN-TU/go-flows.git
 go clean
 go install
+# go install put the bin at userhomedir/go/bin/go-flows
 ```
