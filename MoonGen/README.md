@@ -27,7 +27,7 @@ https://github.com/emmericp/MoonGen/issues/235
 apt-get install -y build-essential cmake linux-headers-`uname -r` pciutils libnuma-dev
 ```
 
-## Instalação MoonGen
+## Instalação MoonGen - Ubuntu 20.04
 :warning: Nota:
 > Utilizada a branch master com dpdk 17.08 incluso.
 ```bash
