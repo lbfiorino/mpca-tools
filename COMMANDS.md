@@ -1,5 +1,6 @@
 ## Comandos
 [Linux](#linux)  
+[Iptables](#iptables) 
 [Wireshark](#wireshark)  
 [Tcpdump](#tcpdump)  
 [Tcpreplay](#tcpreplay)  
@@ -17,6 +18,11 @@ ip link add veth0 type veth peer name veth1
 #### Show PCI address of an NIC
 ```bash
 lshw -c network -businfo
+```
+
+#### Iptables
+```bash
+iptables -A OUTPUT -d 10.50.1.58 -p tcp ! --syn -j DROP
 ```
 
 ### Wireshark
