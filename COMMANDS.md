@@ -28,6 +28,13 @@ iptables -A OUTPUT -d 10.50.1.58 -p tcp ! --syn -j DROP
 [Man pages](https://www.wireshark.org/docs/man-pages/)  
 [Display Filter Reference](https://osqa-ask.wireshark.org/questions/41152/how-to-check-if-fragmentation-is-happeningfith)  
 [editcap examples](https://www.wireshark.org/docs/man-pages/editcap.html#EXAMPLES)  
+
+#### Estatísticas para gráficos
+```bash
+# http://www.wireshark.org/docs/man-pages/tshark.html
+tshark -q -nr input.cap -t ad -z io,stat,1,"AVG(frame.len)frame.len"
+```
+
 #### Extrai pacotes do PCAP no intervalo de tempo
 ```bash
 editcap -F pcap -A "2018-12-01 13:29:00" -B "2018-12-01 13:34:00" <PCAP_INFILE> <PCAP_OUTFILE>
