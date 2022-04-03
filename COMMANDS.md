@@ -1,6 +1,5 @@
 ## Comandos
 [Linux](#linux)  
-[Iptables](#iptables) 
 [Wireshark](#wireshark)  
 [Tcpdump](#tcpdump)  
 [Tcpreplay](#tcpreplay)  
