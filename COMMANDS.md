@@ -19,7 +19,7 @@ ip link add veth0 type veth peer name veth1
 lshw -c network -businfo
 ```
 
-#### Iptables
+#### Iptables - bloqueia pacotes de saída que não seja SYN para o destino
 ```bash
 iptables -A OUTPUT -d 10.50.1.58 -p tcp ! --syn -j DROP
 ```
