@@ -29,6 +29,11 @@ iptables -A OUTPUT -d 10.50.1.58 -p tcp ! --syn -j DROP
 [Display Filter Reference](https://osqa-ask.wireshark.org/questions/41152/how-to-check-if-fragmentation-is-happeningfith)  
 [editcap examples](https://www.wireshark.org/docs/man-pages/editcap.html#EXAMPLES)  
 
+#### Filtro pacotes retransmitidos
+
+Filtrar pacores exceto os retransmitidos: `!(tcp.analysis.retransmission or tcp.analysis.fast_retransmission)`
+Filtrar pacotes retransmitidos: `tcp.analysis.retransmission or tcp.analysis.fast_retransmission`
+
 #### Estatísticas para gráficos
 ```bash
 # http://www.wireshark.org/docs/man-pages/tshark.html
