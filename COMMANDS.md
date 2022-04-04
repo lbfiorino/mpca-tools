@@ -31,7 +31,7 @@ iptables -A OUTPUT -d 10.50.1.58 -p tcp ! --syn -j DROP
 
 #### Filtro pacotes retransmitidos
 
-Filtrar pacores exceto os retransmitidos: `!(tcp.analysis.retransmission or tcp.analysis.fast_retransmission)`
+Filtrar pacores exceto os retransmitidos: `!(tcp.analysis.retransmission or tcp.analysis.fast_retransmission)`  
 Filtrar pacotes retransmitidos: `tcp.analysis.retransmission or tcp.analysis.fast_retransmission`
 
 #### Estatísticas para gráficos
