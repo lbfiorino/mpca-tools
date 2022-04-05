@@ -16,6 +16,12 @@ Instalação da ferramenta Tcpreplay com o framework netmap para replicar arquiv
 > O fragroute foi instalado inicialmente no Debian 10.  
 > O pacote fragroute foi adaptado para o Ubuntu 20.04.
 
+
+:warning: Netmap does not program the NICs to perform offloadings such as TSO, UFO, RX/TX checksum offloadings, etc. As a result, in order to let netmap applications correctly interact with the host rings, you need to disable these offloadings.
+```bash
+ethtool -K eth0 tx off rx off gso off tso off gro off lro off
+```
+
 ## Requisitos
 
 - Kernel headers (normalmente instalado por padrão)
