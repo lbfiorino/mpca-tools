@@ -129,7 +129,8 @@ cd /root/netmap/LINUX
 
 # Neste caso o driver é Intel e1000 e foi utilizado o parâmentro --no-ext-drivers
 # para não precisar baixar os demais drivers e compilar (método 1 da documentação).
-./configure --kernel-sources=/lib/modules/linux-5.4.0 --no-ext-drivers
+# To have the new netmap-enabled driver modules alongside the original ones, you may want to add --driver-suffix=-netmap to the configure command above. The new drivers will then be called e1000e-netmap, ixgbe-netmap, and so on.
+./configure --kernel-sources=/lib/modules/linux-5.4.0 --driver-suffix=-netmap --no-ext-drivers
 make 
 # make install (Não foi executado. Para o carregamento do módulo ser manual)
 ```
