@@ -35,7 +35,7 @@ Yes. The best solution we’ve found comes to us from Robert Hartman although it
 1.) Add IP aliases. Example:
 ```bash
 #!/bin/bash
-for i in $(seq $100 $150)
+for i in $(seq 101 150)
 do
   ifconfig eth0:$i 192.168.1.$i
 done
@@ -43,7 +43,7 @@ done
 To delete aliases:
 ```bash
 #!/bin/bash
-for i in $(seq $100 $150)
+for i in $(seq 101 150)
 do
   ifconfig eth0:$i del 192.168.1.$i
 done
