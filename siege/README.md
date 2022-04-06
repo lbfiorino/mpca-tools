@@ -27,7 +27,8 @@ make uninstall
 make distclean
 ```
 
-## Can I run siege with multiple IP addresses from the same machine? ^
+## Can I run siege with multiple IP addresses from the same machine?
+https://www.joedog.org/siege-faq/#a20
 
 Yes. The best solution we’ve found comes to us from Robert Hartman although it is GNU/Linux specific and it requires IP tables support. Basically there are two steps.
 
