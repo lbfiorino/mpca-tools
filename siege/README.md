@@ -36,20 +36,17 @@ Yes. The best solution we’ve found comes to us from Robert Hartman although it
 ```bash
 #!/bin/bash
 
-for i in `seq 1 254` do
-
+for i in $(seq $100 $150)
+do
   ifconfig eth0:$i 192.168.1.$i
-
 done
 ```
 To delete aliases:
 ```bash
 #!/bin/bash
-
-for i in `seq 1 254` do
-
+for i in $(seq $100 $150)
+do
   ifconfig eth0:$i del 192.168.1.$i
-
 done
 ```
 
