@@ -33,7 +33,7 @@ Yes. The best solution we’ve found comes to us from Robert Hartman although it
 
 1.) Add IP aliases. Example:
 ```bash
-    !/bin/sh
+!/bin/bash
 
 for i in `seq 1 254` do
 
