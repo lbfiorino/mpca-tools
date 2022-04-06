@@ -35,7 +35,6 @@ Yes. The best solution we’ve found comes to us from Robert Hartman although it
 1.) Add IP aliases. Example:
 ```bash
 #!/bin/bash
-
 for i in $(seq $100 $150)
 do
   ifconfig eth0:$i 192.168.1.$i
