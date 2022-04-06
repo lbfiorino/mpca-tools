@@ -26,3 +26,25 @@ cd siege-4.1.1
 make uninstall
 make distclean
 ```
+
+## Can I run siege with multiple IP addresses from the same machine? ^
+
+Yes. The best solution we’ve found comes to us from Robert Hartman although it is GNU/Linux specific and it requires IP tables support. Basically there are two steps.
+
+1.) Add IP aliases. Example:
+```bash
+    !/bin/sh
+
+for i in `seq 1 254` do
+
+  ifconfig eth0:$i 192.168.1.$i;
+
+done
+```
+
+2.) Reverse NAT with iptables. So that the Linux kernel acts as a client from more than one IP address use iptables to do reverse natting. Example:
+```bash
+iptables -t nat -A POSTROUTING -o eth0 -j SNAT –to 192.168.1.1-192.168.1.254
+```
+NOTES:
+>This method can be used for Class B address spaces as well with proper masking on the eth0 interface. Robert tested this to work with 2500+ IPs on a single ethernet card. You can contact Robert via email: “robert at roberthartman dot net”
