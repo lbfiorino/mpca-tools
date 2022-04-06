@@ -19,9 +19,21 @@ ip link add veth0 type veth peer name veth1
 lshw -c network -businfo
 ```
 
-#### Iptables - bloqueia pacotes de saída que não seja SYN para o destino
+#### Iptables
 ```bash
+# Bloqueia pacotes de saída que não seja SYN para o destino
 iptables -A OUTPUT -d 10.50.1.58 -p tcp ! --syn -j DROP
+
+# Mudando o endereço de origem para 1.2.3.4.
+iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to 1.2.3.4
+
+# Mudando o endereço de origem para 1.2.3.4, 1.2.3.5 ou 1.2.3.6
+iptables -t nat -A POSTROUTING -o eth0 -j SNAT --to 1.2.3.4-1.2.3.6
+
+# Mudando o endereço de origem para 1.2.3.4, portas 1-1023
+iptables -t nat -A POSTROUTING -p tcp -o eth0 -j SNAT --to 1.2.3.4:1-1023
+
+
 ```
 
 ### Wireshark
