@@ -42,6 +42,16 @@ for i in `seq 1 254` do
 
 done
 ```
+To delete aliases:
+```bash
+!/bin/bash
+
+for i in `seq 1 254` do
+
+  ifconfig eth0:$i del 192.168.1.$i;
+
+done
+```
 
 2.) Reverse NAT with iptables. So that the Linux kernel acts as a client from more than one IP address use iptables to do reverse natting. Example:
 ```bash
