@@ -116,10 +116,10 @@ tcpdump -i <interface> "tcp[tcpflags] == tcp-syn|tcp-ack"
 # Only TCP SYN packets
 tcpdump -i <interface> "tcp[tcpflags] == tcp-syn"
 
-# Only TCP FIN packets
+# TCP FIN packets
 tcpdump -i <interface> "tcp[tcpflags] & (tcp-fin) != 0"
 
-# Only TCP SYN or ACK packets
+# TCP SYN or ACK packets
 tcpdump -r <interface> "tcp[tcpflags] & (tcp-syn|tcp-ack) != 0"
 ```
 ### T
