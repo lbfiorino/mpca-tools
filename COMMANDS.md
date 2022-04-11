@@ -114,7 +114,7 @@ tcpdump -i <IFACE> -w <PCAP_FILE> -U
 tcpdump -i <interface> "tcp[tcpflags] == tcp-syn|tcp-ack"
 
 # Only TCP SYN packets
-tcpdump -i <interface> "tcp[tcpflags] & (tcp-ack) != 0"
+tcpdump -i <interface> "tcp[tcpflags] == tcp-syn"
 
 # Only TCP FIN packets
 tcpdump -i <interface> "tcp[tcpflags] & (tcp-fin) != 0"
