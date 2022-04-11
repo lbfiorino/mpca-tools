@@ -108,7 +108,22 @@ tshark -r botnet.pcapng -Y 'frame.time>="2016-04-01 06:24:00.3380000" and frame.
 tcpdump -i <IFACE> -w <PCAP_FILE> -U
 ```
 
-### Tcpreplay
+#### To capture TCP FLAGS
+```bash
+# Only SYN+ACK
+tcpdump -i <interface> "tcp[tcpflags] == tcp-syn|tcp-ack"
+
+# Only TCP SYN packets
+tcpdump -i <interface> "tcp[tcpflags] & (tcp-ack) != 0"
+
+# Only TCP FIN packets
+tcpdump -i <interface> "tcp[tcpflags] & (tcp-fin) != 0"
+
+# Only TCP SYN or ACK packets
+tcpdump -r <interface> "tcp[tcpflags] & (tcp-syn|tcp-ack) != 0"
+```
+### T
+cpreplay
 #### Replay preservando o timestamp e com cache em memória do PCAP
 Para melhor desempenho colocar o arquivo PCAP em um diretório TMPFS.  
 Caso haja memória suficiente, fazer cache em memória do PCAP com o parâmetro `--preload-pcap`.  
