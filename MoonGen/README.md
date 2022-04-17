@@ -16,6 +16,7 @@ https://github.com/emmericp/MoonGen/issues/235
 
 
 ## Requisitos
+### Ubuntu 20.04
 - DPDK ([Link Instalação versão 19.11](https://github.com/lbfiorino/pcap-replay-tools/tree/main/pktgen-dpdk#instalar-dpdk))
 - gcc >= 4.8
 - make
@@ -25,6 +26,11 @@ https://github.com/emmericp/MoonGen/issues/235
 - lspci (for dpdk-devbind.py)
 ```bash
 apt-get install -y build-essential cmake linux-headers-`uname -r` pciutils libnuma-dev
+```
+### Centos 8
+```bash
+ yum upgrade libarchive
+ yum install elfutils-libelf-devel
 ```
 
 ## Instalação MoonGen - Ubuntu 20.04
