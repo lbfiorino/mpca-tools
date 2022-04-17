@@ -29,8 +29,7 @@ apt-get install -y build-essential cmake linux-headers-`uname -r` pciutils libnu
 ```
 ### Centos 8
 ```bash
- yum upgrade libarchive
- yum install elfutils-libelf-devel
+ yum upgrade libarchive elfutils-libelf-devel make cmake numactl-devel kernel-devel
 ```
 
 ## Instalação MoonGen - Ubuntu 20.04
