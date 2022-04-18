@@ -4,6 +4,25 @@ https://github.com/buger/goreplay/blob/master/docs/Saving-and-Replaying-from-fil
 
 GoReplay is an open-source network monitoring tool which can record your live traffic, and use it for shadowing, load testing, monitoring and detailed analysis.
 
+### GoReplay do not exit when -input-file is used
+#### Workaround
+```bash
+#!/bin/bash
+
+INPUTFILE="input.gor"
+LOGFILE="/tmp/gor.log"
+MATCH="FileInput: end of file"
+
+gor --input-file "$filename" --output-http="http://www.test.com" 2>&1 | tee $LOGFILE &
+while sleep 5
+do
+    if fgrep --quiet "$MATCH" "$LOGFILE"
+    then
+        exit 0
+    fi
+done
+```
+
 ### Replaying from pcap
 Não respeitou os intervalos entre as requisições. Fez em rajada.
 ```
