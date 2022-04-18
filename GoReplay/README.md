@@ -7,6 +7,7 @@ GoReplay is an open-source network monitoring tool which can record your live tr
 ### GoReplay do not exit when -input-file is used
 #### Workaround
 https://github.com/buger/goreplay/issues/456
+
 ```bash
 #!/bin/bash
 
