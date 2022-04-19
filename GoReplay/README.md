@@ -4,6 +4,12 @@ https://github.com/buger/goreplay/blob/master/docs/Saving-and-Replaying-from-fil
 
 GoReplay is an open-source network monitoring tool which can record your live traffic, and use it for shadowing, load testing, monitoring and detailed analysis.
 
+
+### Replaying from multiple files
+
+--input-file accepts file pattern, for example: --input-file logs-2016-05-*. GoReplay is smart enough keep original order of requests. It is achieved by reading all files in parallel, and sorting requests between multiple files by timestamp. It do not read all files in memory, but instead read them in a streaming way, on demand.
+
+
 ### GoReplay do not exit when -input-file is used
 #### Workaround
 https://github.com/buger/goreplay/issues/456
