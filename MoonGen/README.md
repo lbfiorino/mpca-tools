@@ -1,15 +1,13 @@
 # MoonGen
-```diff
-- Aplicar Patch no arquivo device.c da branch master (dpdk 17.08), recompilar para habilitar jumbo frame e testar
-- Testar branch dpdk-19.05 
-```
+
 [MoonGen GitHub](https://github.com/emmericp/MoonGen)  
 **Paper (IMC 2015)** [MoonGen: A Scriptable High-Speed Packet Generator](https://dl.acm.org/doi/abs/10.1145/2815675.2815692)
 
 **MTU Issues:**  
 https://github.com/emmericp/MoonGen/issues/165  
 https://github.com/emmericp/MoonGen/issues/235  
-
+:warning:
+> Patch no arquivo device.c da branch master (dpdk 17.08) para habilitar jumbo frame e testar **não funcionou**
 
 ## Requisitos
 ### Ubuntu 20.04
