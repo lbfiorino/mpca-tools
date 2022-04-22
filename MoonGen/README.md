@@ -7,7 +7,7 @@
 https://github.com/emmericp/MoonGen/issues/165  
 https://github.com/emmericp/MoonGen/issues/235  
 :warning:
-> Patch no arquivo device.c da branch master (dpdk 17.08) para habilitar jumbo frame e testar **não funcionou**
+> Patch no arquivo device.c (issue 165) da branch master (dpdk 17.08) para habilitar jumbo frame e testar **não funcionou**.
 
 ## Requisitos
 ### Ubuntu 20.04
