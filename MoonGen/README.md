@@ -5,9 +5,25 @@
 
 **MTU Issues:**  
 https://github.com/emmericp/MoonGen/issues/165  
-https://github.com/emmericp/MoonGen/issues/235  
+https://github.com/emmericp/MoonGen/issues/235 
+
+```diff
+--- device.c 2017-03-29 14:27:18.657159902 -0300
++++ device.c 2017-03-22 14:49:13.263529000 -0300
+@@ -118,8 +118,9 @@
+.header_split = 0,
+.hw_ip_checksum = !cfg->disable_offloads,
+.hw_vlan_filter = 0,
+- .jumbo_frame = 0,
++ .jumbo_frame = 1,
+.hw_strip_crc = 1,
++ .max_rx_pkt_len= 9218,
+.hw_vlan_strip = cfg->strip_vlan ? 1 : 0,
+},
+.txmode = {
+```
 :warning:
-> Patch no arquivo device.c (issue 165) da branch master (dpdk 17.08) para habilitar jumbo frame e testar **não funcionou**.
+> Patch no arquivo device.c da branch master (dpdk 17.08) para habilitar jumbo frame e testar **não funcionou**.
 
 ## Requisitos
 ### Ubuntu 20.04
