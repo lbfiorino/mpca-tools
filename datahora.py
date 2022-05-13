@@ -93,7 +93,7 @@ print(f"{'Hora atual:':>20} {NOW}")
 ROME = NOW.astimezone(pytz.timezone("Europe/Rome"))
 print(f"{'Hora Roma:':>20} {ROME} (pytz)")
 
-# Change timzezone to Lomdon using DATEUTIL
+# Change timzezone to Tokyo using DATEUTIL
 TOKYO = NOW.astimezone(tz.gettz('Asia/Tokyo'))
 print(f"{'Hora Tóquio:':>20} {TOKYO} (dateutil)")
 
