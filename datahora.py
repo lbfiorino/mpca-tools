@@ -89,15 +89,15 @@ NOW_utc = datetime.utcnow()
 
 print(f"{'Hora atual:':>20} {NOW}")
 
-# Change timzezone to Rome using PYTZ
+# Change timezone to Rome using PYTZ
 ROME = NOW.astimezone(pytz.timezone("Europe/Rome"))
 print(f"{'Hora Roma:':>20} {ROME} (pytz)")
 
-# Change timzezone to Tokyo using DATEUTIL
+# Change timezone to Tokyo using DATEUTIL
 TOKYO = NOW.astimezone(tz.gettz('Asia/Tokyo'))
 print(f"{'Hora Tóquio:':>20} {TOKYO} (dateutil)")
 
-# Change timzezone to UTC
+# Change timezone to UTC
 UTC_pytz = NOW.astimezone(pytz.UTC)
 UTC_dateutil = NOW.astimezone(tz.gettz('UTC'))
 print(f"{'Hora UTC:':>20} {NOW} (pytz)")
