@@ -46,7 +46,7 @@ A versão 1.3.2 apresentou problemas. Utilizada a versão 1.2.0.
 
 Há opções para gerar um único arquivo. Porém apresentou problemas.  
 `-output-file-queue-limit 0` Não limita o tamanho da fila no arquivo, gerando um único arquivo.
-Ex:
+Por exemplo:
 ```bash
 ./gor1.2.0 -verbose 10 -input-raw http.pcap:80 -input-raw-engine pcap_file --output-file-size-limit 256mb --output-file-queue-limit 0 -output-file http_all.gor
 ```
