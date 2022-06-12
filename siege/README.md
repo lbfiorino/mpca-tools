@@ -3,6 +3,10 @@ https://www.joedog.org/
 https://www.joedog.org/siege-faq/  
 https://github.com/JoeDog/siege  
 
+## Windows
+- Download siege-windows-4.1.3.zip
+- Extract to C:\siege-windows and run C:\siege-windows\siege.exe
+
 ## Requisitos Ubuntu 20.04
 ```bash
 apt install build-essential zlib1g zlib1g-dev openssl libssl-dev
