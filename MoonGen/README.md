@@ -68,6 +68,9 @@ ldd /root/MoonGen/build/MoonGen
 ```
 
 ## DPDK Dev Bind
+
+> :warning: insmod: ERROR: could not insert module ./x86_64-native-linuxapp-gcc/kmod/igb_uio.ko: Operation not permitted
+
 :warning: Notas:
 > - O MoonGen inclui a versão 17.08 do DPDK na branch master do GitHub, porém o `dpdk-devbind.py` incluso não reconhece o driver `vfio-pci`, o qual é necessário para máquinas virtuais com driver `virtio`. Neste caso, fazer o Bind utilizando o `dpdk-devbind.py` do DPDK 19.11.
 > - O `dpdk-devbind.py` incluso na branch `dkdk-19.05` do MoonGen reconheceu o driver `vfio-pci`.
