@@ -1,0 +1,14 @@
+http://10.50.1.204/
+http://10.50.1.204/index.php
+http://10.50.1.204/index.php/home/corporate
+http://10.50.1.204/index.php/home/fashion
+http://10.50.1.204/index.php/home/life-style
+http://10.50.1.204/index.php/home/sea-food
+http://10.50.1.204/index.php/home/legacy
+http://10.50.1.204/index.php/portfolio
+http://10.50.1.204/index.php/gallery/album
+http://10.50.1.204/index.php/about
+http://10.50.1.204/index.php/pages/services
+http://10.50.1.204/index.php/pages/contact
+http://10.50.1.204/index.php/pages/login
+http://10.50.1.204/index.php/pages/registration
