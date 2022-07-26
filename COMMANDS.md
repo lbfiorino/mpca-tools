@@ -122,8 +122,7 @@ tcpdump -i <interface> "tcp[tcpflags] & (tcp-fin) != 0"
 # TCP SYN or ACK packets
 tcpdump -r <interface> "tcp[tcpflags] & (tcp-syn|tcp-ack) != 0"
 ```
-### T
-cpreplay
+### Tcpreplay
 #### Replay preservando o timestamp e com cache em memória do PCAP
 Para melhor desempenho colocar o arquivo PCAP em um diretório TMPFS.  
 Caso haja memória suficiente, fazer cache em memória do PCAP com o parâmetro `--preload-pcap`.  
